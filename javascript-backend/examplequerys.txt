@@ -1,0 +1,25 @@
+ODBC.query('SELECT BVNAME FROM CUST', (error, result) => {
+    if (error) {
+        console.error(error);
+        return;
+    }
+    let str = '';
+    result.forEach(line => {
+        str += line["BVNAME"] + '\n';
+    });
+    fs.writeFileSync("./output.txt", str);
+    // console.log(result);
+});
+
+
+mysql.query('SHOW TABLES;', (error, result) => {
+    if (error) {
+        console.error(error);
+        return;
+    }
+    let str = '';
+    result.forEach(line => {
+        str += line["BVNAME"] + '\n';
+    });
+    console.log(result);
+});

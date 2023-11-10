@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: install
+Created-By: InstallAnywhere 2021 (C) 2021 Flexera
+IA-Digest: 32DFF90136A6A102B9F82EBCA0C529EC1EAB92FF

@@ -1,0 +1,1026 @@
+# InstallAnywhere Localization File
+#
+# External strings for locale: English (en)
+# See the 'ProjectLocalizationInfo.txt' file in this same directory for information 
+#     regarding mappings between the properties shown below and your InstallAnywhere
+#     project.
+#
+# External/Locale property names can take one of three forms:
+#     <ActionName>.<ReferenceID>.<ActionProperty>          (e.g., Installer.858175031081.productName)
+#     <ActionName>.<ReferenceID>.<ActionProperty>.<Index>  (e.g., Installer.858175031081.installLabels.01)
+#         - where the <ActionProperty> is a Vector and the <Index> represents the place within the
+#           Vector where the value of the property should be inserted
+#     _ia.<SomeProperty>                                   (e.g., _ia.MyCustomCodePanelProperty)
+#         - where <SomeProperty> is used as an identifier for a localized value by custom code
+#
+# External/Locale property values should be plain text strings.  Special or i18n characters
+#     that cannot be represented by ASCII characters should be written using escaped unicode.
+#     - see the utility 'native2ascii' distributed with your JDK
+#
+# Product Name: SQLServer
+# Project File: C:\BuildAgent\work\48d7847b83f48b91\DriverMergeModule\IAWORK\sqlserver-odbcBMMtmp.iap_xml
+# Generated:    Thu Aug 17 22:29:14 EDT 2023
+
+
+# AllOrFeaturesActionConsole.19faf202b1e9.allDescription=Completely remove all features and components.
+AllOrFeaturesActionConsole.19faf202b1e9.allDescription=Completely remove all features and components.
+
+# AllOrFeaturesActionConsole.19faf202b1e9.instructions=Please choose one of the following options
+AllOrFeaturesActionConsole.19faf202b1e9.instructions=Please choose one of the following options
+
+# AllOrFeaturesActionConsole.19faf202b1e9.prompt=ENTER THE NUMBER FOR YOUR CHOICE, OR PRESS <ENTER> TO ACCEPT THE DEFAULT:
+AllOrFeaturesActionConsole.19faf202b1e9.prompt=ENTER THE NUMBER FOR YOUR CHOICE, OR PRESS <ENTER> TO ACCEPT THE DEFAULT:
+
+# AllOrFeaturesActionConsole.19faf202b1e9.someDescription=Choose specific features that were installed by InstallAnywhere.
+AllOrFeaturesActionConsole.19faf202b1e9.someDescription=Choose specific features that were installed by InstallAnywhere.
+
+# AllOrFeaturesActionConsole.19faf202b1e9.stepTitle=Uninstall Options
+AllOrFeaturesActionConsole.19faf202b1e9.stepTitle=Uninstall Options
+
+# AllOrFeaturesActionConsole.8c96245e90d6.allDescription=Completely remove all features and components.
+AllOrFeaturesActionConsole.8c96245e90d6.allDescription=Completely remove all features and components.
+
+# AllOrFeaturesActionConsole.8c96245e90d6.instructions=Please choose one of the following options
+AllOrFeaturesActionConsole.8c96245e90d6.instructions=Please choose one of the following options
+
+# AllOrFeaturesActionConsole.8c96245e90d6.prompt=ENTER THE NUMBER FOR YOUR CHOICE, OR PRESS <ENTER> TO ACCEPT THE DEFAULT:
+AllOrFeaturesActionConsole.8c96245e90d6.prompt=ENTER THE NUMBER FOR YOUR CHOICE, OR PRESS <ENTER> TO ACCEPT THE DEFAULT:
+
+# AllOrFeaturesActionConsole.8c96245e90d6.someDescription=Choose specific features that were installed by InstallAnywhere.
+AllOrFeaturesActionConsole.8c96245e90d6.someDescription=Choose specific features that were installed by InstallAnywhere.
+
+# AllOrFeaturesActionConsole.8c96245e90d6.stepTitle=Uninstall Options
+AllOrFeaturesActionConsole.8c96245e90d6.stepTitle=Uninstall Options
+
+# ASCIIFileManipulator.19faf205b218.additionalText=@setlocal\ncd /d \"$USER_INSTALL_DIR$$/$drivers\ndir $PREFIX$*.dll > nul 2>&1 && del /f/q $PREFIX$$DRIVER_FILE_BASE$*.dll\n
+ASCIIFileManipulator.19faf205b218.additionalText=@setlocal\ncd /d \"$USER_INSTALL_DIR$$/$drivers\ndir $PREFIX$*.dll > nul 2>&1 && del /f/q $PREFIX$$DRIVER_FILE_BASE$*.dll\n
+
+# ASCIIFileManipulator.19faf220b30d.additionalText=
+ASCIIFileManipulator.19faf220b30d.additionalText=
+
+# ASCIIFileManipulator.19faf22eb397.additionalText=
+ASCIIFileManipulator.19faf22eb397.additionalText=
+
+# ASCIIFileManipulator.19faf234b3d8.additionalText=INSTALLED_DRIVERS=$DRIVER_SHORT_NAME$
+ASCIIFileManipulator.19faf234b3d8.additionalText=INSTALLED_DRIVERS=$DRIVER_SHORT_NAME$
+
+# ASCIIFileManipulator.19faf234b3e5.additionalText=INSTALLED_DRIVERS=$INSTALLED_DRIVERS$,$DRIVER_SHORT_NAME$
+ASCIIFileManipulator.19faf234b3e5.additionalText=INSTALLED_DRIVERS=$INSTALLED_DRIVERS$,$DRIVER_SHORT_NAME$
+
+# ASCIIFileManipulator.19faf23db434.additionalText=$DRIVER_SHORT_NAME$.service.name=$SERVICE_NAME$\n$DRIVER_SHORT_NAME$.service.exe.name=$SERVICE_EXE_NAME$\n$DRIVER_SHORT_NAME$.service.jvmport=$SERVICE_JVMPORT$\n
+ASCIIFileManipulator.19faf23db434.additionalText=$DRIVER_SHORT_NAME$.service.name=$SERVICE_NAME$\n$DRIVER_SHORT_NAME$.service.exe.name=$SERVICE_EXE_NAME$\n$DRIVER_SHORT_NAME$.service.jvmport=$SERVICE_JVMPORT$\n
+
+# ASCIIFileManipulator.19faf23db438.additionalText=# Installed Drivers Properties\n
+ASCIIFileManipulator.19faf23db438.additionalText=# Installed Drivers Properties\n
+
+# ASCIIFileManipulator.77f23902b0d2.additionalText=
+ASCIIFileManipulator.77f23902b0d2.additionalText=
+
+# ASCIIFileManipulator.a6c3b4ec8f0f.additionalText=@setlocal\ncd /d \"$USER_INSTALL_DIR$$/$drivers\ndir $PREFIX$*.dll > nul 2>&1 && del /f/q $PREFIX$$DRIVER_FILE_BASE$*.dll\n
+ASCIIFileManipulator.a6c3b4ec8f0f.additionalText=@setlocal\ncd /d \"$USER_INSTALL_DIR$$/$drivers\ndir $PREFIX$*.dll > nul 2>&1 && del /f/q $PREFIX$$DRIVER_FILE_BASE$*.dll\n
+
+# ASCIIFileManipulator.db61535ab13e.additionalText=INSTALLED_DRIVERS=$DRIVER_SHORT_NAME$
+ASCIIFileManipulator.db61535ab13e.additionalText=INSTALLED_DRIVERS=$DRIVER_SHORT_NAME$
+
+# ASCIIFileManipulator.db66b4668a6b.additionalText=INSTALLED_DRIVERS=$INSTALLED_DRIVERS$,$DRIVER_SHORT_NAME$
+ASCIIFileManipulator.db66b4668a6b.additionalText=INSTALLED_DRIVERS=$INSTALLED_DRIVERS$,$DRIVER_SHORT_NAME$
+
+# ASCIIFileManipulator.f0b59f0783a9.additionalText=
+ASCIIFileManipulator.f0b59f0783a9.additionalText=
+
+# ASCIIFileManipulator.fbb72cd78e7b.additionalText=$DRIVER_SHORT_NAME$.service.name=$SERVICE_NAME$\n$DRIVER_SHORT_NAME$.service.exe.name=$SERVICE_EXE_NAME$\n$DRIVER_SHORT_NAME$.service.jvmport=$SERVICE_JVMPORT$\n
+ASCIIFileManipulator.fbb72cd78e7b.additionalText=$DRIVER_SHORT_NAME$.service.name=$SERVICE_NAME$\n$DRIVER_SHORT_NAME$.service.exe.name=$SERVICE_EXE_NAME$\n$DRIVER_SHORT_NAME$.service.jvmport=$SERVICE_JVMPORT$\n
+
+# ASCIIFileManipulator.fef0a720904b.additionalText=# Installed Drivers Properties\n
+ASCIIFileManipulator.fef0a720904b.additionalText=# Installed Drivers Properties\n
+
+# Billboard.19faf214b299.imageName=billboard_default.png
+Billboard.19faf214b299.imageName=billboard_default.png
+
+# Billboard.19faf214b299.imagePath=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/254563a034ed41e4e80b453700885aba
+Billboard.19faf214b299.imagePath=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/254563a034ed41e4e80b453700885aba
+
+# Billboard.4dde1c3b9490.imageName=billboard_default.png
+Billboard.4dde1c3b9490.imageName=billboard_default.png
+
+# Billboard.4dde1c3b9490.imagePath=com/zerog/ia/installer/images/
+Billboard.4dde1c3b9490.imagePath=com/zerog/ia/installer/images/
+
+# CustomAction.19faf243b486.dialogLabel=Adding $INI_FILE_TARGET$ ...
+CustomAction.19faf243b486.dialogLabel=Adding $INI_FILE_TARGET$ ...
+
+# CustomAction.19faf245b491.dialogLabel=Adding $INI_FILE_TARGET$ ...
+CustomAction.19faf245b491.dialogLabel=Adding $INI_FILE_TARGET$ ...
+
+# CustomAction.90dcfa499462.dialogLabel=Adding $INI_FILE_TARGET$ ...
+CustomAction.90dcfa499462.dialogLabel=Adding $INI_FILE_TARGET$ ...
+
+# CustomAction.90dd32a6976c.dialogLabel=Adding $INI_FILE_TARGET$ ...
+CustomAction.90dd32a6976c.dialogLabel=Adding $INI_FILE_TARGET$ ...
+
+# CustomizeBundles.19faf202b1e6.checkInstructions=Check features that you want to uninstall. Unchecked features will remain installed.
+CustomizeBundles.19faf202b1e6.checkInstructions=Check features that you want to uninstall. Unchecked features will remain installed.
+
+# CustomizeBundles.19faf202b1e6.title=Choose Product Features
+CustomizeBundles.19faf202b1e6.title=Choose Product Features
+
+# CustomizeBundles.19faf202b1e6.uncheckInstructions=Uncheck features that you want to uninstall. Checked features will remain installed.
+CustomizeBundles.19faf202b1e6.uncheckInstructions=Uncheck features that you want to uninstall. Checked features will remain installed.
+
+# CustomizeBundles.8c95fc969082.checkInstructions=Check features that you want to uninstall. Unchecked features will remain installed.
+CustomizeBundles.8c95fc969082.checkInstructions=Check features that you want to uninstall. Unchecked features will remain installed.
+
+# CustomizeBundles.8c95fc969082.title=Choose Product Features
+CustomizeBundles.8c95fc969082.title=Choose Product Features
+
+# CustomizeBundles.8c95fc969082.uncheckInstructions=Uncheck features that you want to uninstall. Checked features will remain installed.
+CustomizeBundles.8c95fc969082.uncheckInstructions=Uncheck features that you want to uninstall. Checked features will remain installed.
+
+# CustomizeBundlesConsole.19faf202b1ec.checkInstructions=Provide the Feature Number that you want to uninstall. Press <Enter> when you are done.
+CustomizeBundlesConsole.19faf202b1ec.checkInstructions=Provide the Feature Number that you want to uninstall. Press <Enter> when you are done.
+
+# CustomizeBundlesConsole.19faf202b1ec.title=Choose Product Features
+CustomizeBundlesConsole.19faf202b1ec.title=Choose Product Features
+
+# CustomizeBundlesConsole.19faf202b1ec.uncheckInstructions=Provide the Feature Number that you want to uninstall. Press <Enter> when you are done.
+CustomizeBundlesConsole.19faf202b1ec.uncheckInstructions=Provide the Feature Number that you want to uninstall. Press <Enter> when you are done.
+
+# CustomizeBundlesConsole.8c962efc912a.checkInstructions=Provide the Feature Number that you want to uninstall. Press <Enter> when you are done.
+CustomizeBundlesConsole.8c962efc912a.checkInstructions=Provide the Feature Number that you want to uninstall. Press <Enter> when you are done.
+
+# CustomizeBundlesConsole.8c962efc912a.title=Choose Product Features
+CustomizeBundlesConsole.8c962efc912a.title=Choose Product Features
+
+# CustomizeBundlesConsole.8c962efc912a.uncheckInstructions=Provide the Feature Number that you want to uninstall. Press <Enter> when you are done.
+CustomizeBundlesConsole.8c962efc912a.uncheckInstructions=Provide the Feature Number that you want to uninstall. Press <Enter> when you are done.
+
+# Exec.19faf205b21b.commandLineArgs=$DDTEMP_FILE_NAME$
+Exec.19faf205b21b.commandLineArgs=$DDTEMP_FILE_NAME$
+
+# Exec.19faf205b21b.dialogLabel=Removing driver files...
+Exec.19faf205b21b.dialogLabel=Removing driver files...
+
+# Exec.19faf205b21b.title=
+Exec.19faf205b21b.title=
+
+# Exec.19faf20fb250.commandLineArgs=cmd /c reg delete \"$WINREG_SERVICE_DRIVER_KEY$\" /f
+Exec.19faf20fb250.commandLineArgs=cmd /c reg delete \"$WINREG_SERVICE_DRIVER_KEY$\" /f
+
+# Exec.19faf20fb250.title=
+Exec.19faf20fb250.title=
+
+# Exec.66ed59af8f1e.commandLineArgs=cmd /c reg delete \"$WINREG_SERVICE_DRIVER_KEY$\" /f
+Exec.66ed59af8f1e.commandLineArgs=cmd /c reg delete \"$WINREG_SERVICE_DRIVER_KEY$\" /f
+
+# Exec.66ed59af8f1e.title=
+Exec.66ed59af8f1e.title=
+
+# Exec.a6c3c53c8f5b.commandLineArgs=$DDTEMP_FILE_NAME$
+Exec.a6c3c53c8f5b.commandLineArgs=$DDTEMP_FILE_NAME$
+
+# Exec.a6c3c53c8f5b.dialogLabel=Removing driver files...
+Exec.a6c3c53c8f5b.dialogLabel=Removing driver files...
+
+# Exec.a6c3c53c8f5b.title=
+Exec.a6c3c53c8f5b.title=
+
+# ExecuteScript.19faf245b494.dialogLabel=Creating /Library/ODBC folder
+ExecuteScript.19faf245b494.dialogLabel=Creating /Library/ODBC folder
+
+# ExecuteScript.19faf245b494.title=
+ExecuteScript.19faf245b494.title=
+
+# ExecuteScript.19faf246b497.dialogLabel=Creating ~/Library/ODBC folder
+ExecuteScript.19faf246b497.dialogLabel=Creating ~/Library/ODBC folder
+
+# ExecuteScript.19faf246b497.title=
+ExecuteScript.19faf246b497.title=
+
+# ExecuteScript.19faf248b4a8.dialogLabel=Creating ~/Library/ODBC folder
+ExecuteScript.19faf248b4a8.dialogLabel=Creating ~/Library/ODBC folder
+
+# ExecuteScript.19faf248b4a8.title=
+ExecuteScript.19faf248b4a8.title=
+
+# ExecuteScript.19faf24eb4e6.dialogLabel=Populating Services.properties...
+ExecuteScript.19faf24eb4e6.dialogLabel=Populating Services.properties...
+
+# ExecuteScript.19faf24eb4e6.title=
+ExecuteScript.19faf24eb4e6.title=
+
+# ExecuteScript.90de71f19b78.dialogLabel=Creating /Library/ODBC folder
+ExecuteScript.90de71f19b78.dialogLabel=Creating /Library/ODBC folder
+
+# ExecuteScript.90de71f19b78.title=
+ExecuteScript.90de71f19b78.title=
+
+# ExecuteScript.90dfdacc9faf.dialogLabel=Creating ~/Library/ODBC folder
+ExecuteScript.90dfdacc9faf.dialogLabel=Creating ~/Library/ODBC folder
+
+# ExecuteScript.90dfdacc9faf.title=
+ExecuteScript.90dfdacc9faf.title=
+
+# ExecuteScript.a70a0df69679.dialogLabel=Creating ~/Library/ODBC folder
+ExecuteScript.a70a0df69679.dialogLabel=Creating ~/Library/ODBC folder
+
+# ExecuteScript.a70a0df69679.title=
+ExecuteScript.a70a0df69679.title=
+
+# ExecuteScript.c7cb622d804e.dialogLabel=Populating Services.properties...
+ExecuteScript.c7cb622d804e.dialogLabel=Populating Services.properties...
+
+# ExecuteScript.c7cb622d804e.title=
+ExecuteScript.c7cb622d804e.title=
+
+# InstallBundle.19faf214b296.bundleName=SQLServer
+InstallBundle.19faf214b296.bundleName=SQLServer
+
+# InstallBundle.19faf214b296.description=This installs the application feature.
+InstallBundle.19faf214b296.description=This installs the application feature.
+
+# InstallBundle.4dde1c3e949b.bundleName=SQLServer
+InstallBundle.4dde1c3e949b.bundleName=SQLServer
+
+# InstallBundle.4dde1c3e949b.description=This installs the application feature.
+InstallBundle.4dde1c3e949b.description=This installs the application feature.
+
+# InstallDirAction.19faf163b0f4.additionalText=Please choose a destination folder for this installation.
+InstallDirAction.19faf163b0f4.additionalText=Please choose a destination folder for this installation.
+
+# InstallDirAction.19faf163b0f4.prompt=&Where Would You Like to Install?
+InstallDirAction.19faf163b0f4.prompt=&Where Would You Like to Install?
+
+# InstallDirAction.19faf163b0f4.stepTitle=Choose Install Folder
+InstallDirAction.19faf163b0f4.stepTitle=Choose Install Folder
+
+# InstallDirAction.4dde1c4094ab.additionalText=Please choose a destination folder for this installation.
+InstallDirAction.4dde1c4094ab.additionalText=Please choose a destination folder for this installation.
+
+# InstallDirAction.4dde1c4094ab.prompt=&Where Would You Like to Install?
+InstallDirAction.4dde1c4094ab.prompt=&Where Would You Like to Install?
+
+# InstallDirAction.4dde1c4094ab.stepTitle=Choose Install Folder
+InstallDirAction.4dde1c4094ab.stepTitle=Choose Install Folder
+
+# Installer.19faf15fb0d8.installLabels.00=Introduction
+Installer.19faf15fb0d8.installLabels.00=Introduction
+
+# Installer.19faf15fb0d8.installLabels.01=Choose Install Folder
+Installer.19faf15fb0d8.installLabels.01=Choose Install Folder
+
+# Installer.19faf15fb0d8.installLabels.02=Choose Shortcut Folder
+Installer.19faf15fb0d8.installLabels.02=Choose Shortcut Folder
+
+# Installer.19faf15fb0d8.installLabels.03=Pre-Installation Summary
+Installer.19faf15fb0d8.installLabels.03=Pre-Installation Summary
+
+# Installer.19faf15fb0d8.installLabels.04=Installing...
+Installer.19faf15fb0d8.installLabels.04=Installing...
+
+# Installer.19faf15fb0d8.installLabels.05=Install Complete
+Installer.19faf15fb0d8.installLabels.05=Install Complete
+
+# Installer.19faf15fb0d8.installProgressImageName=introImage.png
+Installer.19faf15fb0d8.installProgressImageName=introImage.png
+
+# Installer.19faf15fb0d8.installProgressImagePath=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/254563a034ed41e4e80b453700885aba
+Installer.19faf15fb0d8.installProgressImagePath=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/254563a034ed41e4e80b453700885aba
+
+# Installer.19faf15fb0d8.panelImageName=progress-ODBC.png
+Installer.19faf15fb0d8.panelImageName=progress-ODBC.png
+
+# Installer.19faf15fb0d8.panelImagePath=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/463ef2530ff323d0a3807ac5f26cad76
+Installer.19faf15fb0d8.panelImagePath=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/463ef2530ff323d0a3807ac5f26cad76
+
+# Installer.19faf15fb0d8.rulesFailedMessage=The installer cannot run on your configuration. It will now quit.
+Installer.19faf15fb0d8.rulesFailedMessage=The installer cannot run on your configuration. It will now quit.
+
+# Installer.19faf15fb0d8.splashScreenConsolePrompt=CHOOSE LOCALE BY NUMBER
+Installer.19faf15fb0d8.splashScreenConsolePrompt=CHOOSE LOCALE BY NUMBER
+
+# Installer.19faf15fb0d8.splashScreenConsoleTitle=Choose Locale...
+Installer.19faf15fb0d8.splashScreenConsoleTitle=Choose Locale...
+
+# Installer.19faf15fb0d8.splashScreenGUIConfirm=OK
+Installer.19faf15fb0d8.splashScreenGUIConfirm=OK
+
+# Installer.19faf15fb0d8.splashScreenGUIImageName=DD_ODBC_SplashScreen.jpg
+Installer.19faf15fb0d8.splashScreenGUIImageName=DD_ODBC_SplashScreen.jpg
+
+# Installer.19faf15fb0d8.splashScreenGUIImageName1=SplashNew.png
+Installer.19faf15fb0d8.splashScreenGUIImageName1=SplashNew.png
+
+# Installer.19faf15fb0d8.splashScreenGUIImageName2=SplashNew.png
+Installer.19faf15fb0d8.splashScreenGUIImageName2=SplashNew.png
+
+# Installer.19faf15fb0d8.splashScreenGUIImagePath=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/463ef2530ff323d0a3807ac5f26cad76
+Installer.19faf15fb0d8.splashScreenGUIImagePath=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/463ef2530ff323d0a3807ac5f26cad76
+
+# Installer.19faf15fb0d8.splashScreenGUIImagePath1=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/254563a034ed41e4e80b453700885aba
+Installer.19faf15fb0d8.splashScreenGUIImagePath1=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/254563a034ed41e4e80b453700885aba
+
+# Installer.19faf15fb0d8.splashScreenGUIImagePath2=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/254563a034ed41e4e80b453700885aba
+Installer.19faf15fb0d8.splashScreenGUIImagePath2=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/254563a034ed41e4e80b453700885aba
+
+# Installer.19faf15fb0d8.splashScreenGUIInstructions=
+Installer.19faf15fb0d8.splashScreenGUIInstructions=
+
+# Installer.19faf15fb0d8.splashScreenGUITitle=
+Installer.19faf15fb0d8.splashScreenGUITitle=
+
+# Installer.4dde1c37947c.installLabels.00=Introduction
+Installer.4dde1c37947c.installLabels.00=Introduction
+
+# Installer.4dde1c37947c.installLabels.01=Choose Install Folder
+Installer.4dde1c37947c.installLabels.01=Choose Install Folder
+
+# Installer.4dde1c37947c.installLabels.02=Choose Shortcut Folder
+Installer.4dde1c37947c.installLabels.02=Choose Shortcut Folder
+
+# Installer.4dde1c37947c.installLabels.03=Pre-Installation Summary
+Installer.4dde1c37947c.installLabels.03=Pre-Installation Summary
+
+# Installer.4dde1c37947c.installLabels.04=Installing...
+Installer.4dde1c37947c.installLabels.04=Installing...
+
+# Installer.4dde1c37947c.installLabels.05=Install Complete
+Installer.4dde1c37947c.installLabels.05=Install Complete
+
+# Installer.4dde1c37947c.installProgressImageName=introImage.png
+Installer.4dde1c37947c.installProgressImageName=introImage.png
+
+# Installer.4dde1c37947c.installProgressImagePath=com/zerog/ia/installer/images/
+Installer.4dde1c37947c.installProgressImagePath=com/zerog/ia/installer/images/
+
+# Installer.4dde1c37947c.panelImageName=progress-ODBC.png
+Installer.4dde1c37947c.panelImageName=progress-ODBC.png
+
+# Installer.4dde1c37947c.panelImagePath=$IA_PROJECT_DIR$\\instres\\images\\
+Installer.4dde1c37947c.panelImagePath=$IA_PROJECT_DIR$\\instres\\images\\
+
+# Installer.4dde1c37947c.rulesFailedMessage=The installer cannot run on your configuration. It will now quit.
+Installer.4dde1c37947c.rulesFailedMessage=The installer cannot run on your configuration. It will now quit.
+
+# Installer.4dde1c37947c.splashScreenConsolePrompt=CHOOSE LOCALE BY NUMBER
+Installer.4dde1c37947c.splashScreenConsolePrompt=CHOOSE LOCALE BY NUMBER
+
+# Installer.4dde1c37947c.splashScreenConsoleTitle=Choose Locale...
+Installer.4dde1c37947c.splashScreenConsoleTitle=Choose Locale...
+
+# Installer.4dde1c37947c.splashScreenGUIConfirm=OK
+Installer.4dde1c37947c.splashScreenGUIConfirm=OK
+
+# Installer.4dde1c37947c.splashScreenGUIImageName=DD_ODBC_SplashScreen.jpg
+Installer.4dde1c37947c.splashScreenGUIImageName=DD_ODBC_SplashScreen.jpg
+
+# Installer.4dde1c37947c.splashScreenGUIImageName1=SplashNew.png
+Installer.4dde1c37947c.splashScreenGUIImageName1=SplashNew.png
+
+# Installer.4dde1c37947c.splashScreenGUIImageName2=SplashNew.png
+Installer.4dde1c37947c.splashScreenGUIImageName2=SplashNew.png
+
+# Installer.4dde1c37947c.splashScreenGUIImagePath=$IA_PROJECT_DIR$\\instres\\images\\
+Installer.4dde1c37947c.splashScreenGUIImagePath=$IA_PROJECT_DIR$\\instres\\images\\
+
+# Installer.4dde1c37947c.splashScreenGUIImagePath1=com/zerog/ia/installer/images/
+Installer.4dde1c37947c.splashScreenGUIImagePath1=com/zerog/ia/installer/images/
+
+# Installer.4dde1c37947c.splashScreenGUIImagePath2=com/zerog/ia/installer/images/
+Installer.4dde1c37947c.splashScreenGUIImagePath2=com/zerog/ia/installer/images/
+
+# Installer.4dde1c37947c.splashScreenGUIInstructions=
+Installer.4dde1c37947c.splashScreenGUIInstructions=
+
+# Installer.4dde1c37947c.splashScreenGUITitle=
+Installer.4dde1c37947c.splashScreenGUITitle=
+
+# InstallerInfoData.19faf1feb1c0.email=
+InstallerInfoData.19faf1feb1c0.email=
+
+# InstallerInfoData.19faf1feb1c0.installerName=sqlserver-install
+InstallerInfoData.19faf1feb1c0.installerName=sqlserver-install
+
+# InstallerInfoData.19faf1feb1c0.installerTitle=SQLServer
+InstallerInfoData.19faf1feb1c0.installerTitle=SQLServer
+
+# InstallerInfoData.19faf1feb1c0.productDescription=
+InstallerInfoData.19faf1feb1c0.productDescription=
+
+# InstallerInfoData.19faf1feb1c0.productName=SQLServer
+InstallerInfoData.19faf1feb1c0.productName=SQLServer
+
+# InstallerInfoData.19faf1feb1c0.productURL=
+InstallerInfoData.19faf1feb1c0.productURL=
+
+# InstallerInfoData.19faf1feb1c0.supportURL=
+InstallerInfoData.19faf1feb1c0.supportURL=
+
+# InstallerInfoData.19faf1feb1c0.vendorName=Progress Software Corporation
+InstallerInfoData.19faf1feb1c0.vendorName=Progress Software Corporation
+
+# InstallerInfoData.19faf1feb1c0.vendorURL=http://www.progress.com/
+InstallerInfoData.19faf1feb1c0.vendorURL=http://www.progress.com/
+
+# InstallerInfoData.4dde1c399486.email=
+InstallerInfoData.4dde1c399486.email=
+
+# InstallerInfoData.4dde1c399486.installerName=sqlserver-install
+InstallerInfoData.4dde1c399486.installerName=sqlserver-install
+
+# InstallerInfoData.4dde1c399486.installerTitle=SQLServer
+InstallerInfoData.4dde1c399486.installerTitle=SQLServer
+
+# InstallerInfoData.4dde1c399486.productDescription=
+InstallerInfoData.4dde1c399486.productDescription=
+
+# InstallerInfoData.4dde1c399486.productName=SQLServer
+InstallerInfoData.4dde1c399486.productName=SQLServer
+
+# InstallerInfoData.4dde1c399486.productURL=
+InstallerInfoData.4dde1c399486.productURL=
+
+# InstallerInfoData.4dde1c399486.supportURL=
+InstallerInfoData.4dde1c399486.supportURL=
+
+# InstallerInfoData.4dde1c399486.vendorName=Progress Software Corporation
+InstallerInfoData.4dde1c399486.vendorName=Progress Software Corporation
+
+# InstallerInfoData.4dde1c399486.vendorURL=http://www.progress.com/
+InstallerInfoData.4dde1c399486.vendorURL=http://www.progress.com/
+
+# InstallerUpdateSettings.19faf214b291.promptMessage=Do you want to install latest available version?
+InstallerUpdateSettings.19faf214b291.promptMessage=Do you want to install latest available version?
+
+# InstallerUpdateSettings.19faf214b291.promptTitle=Installer Update
+InstallerUpdateSettings.19faf214b291.promptTitle=Installer Update
+
+# InstallerUpdateSettings.ee16386eb22c.promptMessage=Do you want to install latest available version?
+InstallerUpdateSettings.ee16386eb22c.promptMessage=Do you want to install latest available version?
+
+# InstallerUpdateSettings.ee16386eb22c.promptTitle=Installer Update
+InstallerUpdateSettings.ee16386eb22c.promptTitle=Installer Update
+
+# InstallFinishAction.19faf165b0fd.installErrorMessage=The installation of $PRODUCT_NAME$ is finished, but some errors occurred during the install.  Please see the installation log for details.
+InstallFinishAction.19faf165b0fd.installErrorMessage=The installation of $PRODUCT_NAME$ is finished, but some errors occurred during the install.  Please see the installation log for details.
+
+# InstallFinishAction.19faf165b0fd.installFatalMessage=The installation of $PRODUCT_NAME$ has been rolled back.\n\n Please see the installation log for details.
+InstallFinishAction.19faf165b0fd.installFatalMessage=The installation of $PRODUCT_NAME$ has been rolled back.\n\n Please see the installation log for details.
+
+# InstallFinishAction.19faf165b0fd.installSuccessMessage=Congratulations! $PRODUCT_NAME$ has been successfully installed to:\n\n     $USER_INSTALL_DIR$\n\nPress \"Done\" to quit the installer.
+InstallFinishAction.19faf165b0fd.installSuccessMessage=Congratulations! $PRODUCT_NAME$ has been successfully installed to:\n\n     $USER_INSTALL_DIR$\n\nPress \"Done\" to quit the installer.
+
+# InstallFinishAction.19faf165b0fd.installWarningMessage=The installation of $PRODUCT_NAME$ is finished, but some warnings occurred during the install.  Please see the installation log for details.
+InstallFinishAction.19faf165b0fd.installWarningMessage=The installation of $PRODUCT_NAME$ is finished, but some warnings occurred during the install.  Please see the installation log for details.
+
+# InstallFinishAction.19faf165b0fd.launchText=
+InstallFinishAction.19faf165b0fd.launchText=
+
+# InstallFinishAction.19faf165b0fd.rebootNotNeededMessage=
+InstallFinishAction.19faf165b0fd.rebootNotNeededMessage=
+
+# InstallFinishAction.19faf165b0fd.rebootRecommendedMessage=You should restart the system to complete the installation.
+InstallFinishAction.19faf165b0fd.rebootRecommendedMessage=You should restart the system to complete the installation.
+
+# InstallFinishAction.19faf165b0fd.rebootRequiredMessage=You need to restart the system to complete the installation.
+InstallFinishAction.19faf165b0fd.rebootRequiredMessage=You need to restart the system to complete the installation.
+
+# InstallFinishAction.19faf165b0fd.windowTitle=Install Complete
+InstallFinishAction.19faf165b0fd.windowTitle=Install Complete
+
+# InstallFinishAction.4dde1c4094ae.installErrorMessage=The installation of $PRODUCT_NAME$ is finished, but some errors occurred during the install.  Please see the installation log for details.
+InstallFinishAction.4dde1c4094ae.installErrorMessage=The installation of $PRODUCT_NAME$ is finished, but some errors occurred during the install.  Please see the installation log for details.
+
+# InstallFinishAction.4dde1c4094ae.installFatalMessage=The installation of $PRODUCT_NAME$ has been rolled back.\n\n Please see the installation log for details.
+InstallFinishAction.4dde1c4094ae.installFatalMessage=The installation of $PRODUCT_NAME$ has been rolled back.\n\n Please see the installation log for details.
+
+# InstallFinishAction.4dde1c4094ae.installSuccessMessage=Congratulations! $PRODUCT_NAME$ has been successfully installed to:\n\n     $USER_INSTALL_DIR$\n\nPress \"Done\" to quit the installer.
+InstallFinishAction.4dde1c4094ae.installSuccessMessage=Congratulations! $PRODUCT_NAME$ has been successfully installed to:\n\n     $USER_INSTALL_DIR$\n\nPress \"Done\" to quit the installer.
+
+# InstallFinishAction.4dde1c4094ae.installWarningMessage=The installation of $PRODUCT_NAME$ is finished, but some warnings occurred during the install.  Please see the installation log for details.
+InstallFinishAction.4dde1c4094ae.installWarningMessage=The installation of $PRODUCT_NAME$ is finished, but some warnings occurred during the install.  Please see the installation log for details.
+
+# InstallFinishAction.4dde1c4094ae.launchText=
+InstallFinishAction.4dde1c4094ae.launchText=
+
+# InstallFinishAction.4dde1c4094ae.rebootNotNeededMessage=
+InstallFinishAction.4dde1c4094ae.rebootNotNeededMessage=
+
+# InstallFinishAction.4dde1c4094ae.rebootRecommendedMessage=You should restart the system to complete the installation.
+InstallFinishAction.4dde1c4094ae.rebootRecommendedMessage=You should restart the system to complete the installation.
+
+# InstallFinishAction.4dde1c4094ae.rebootRequiredMessage=You need to restart the system to complete the installation.
+InstallFinishAction.4dde1c4094ae.rebootRequiredMessage=You need to restart the system to complete the installation.
+
+# InstallFinishAction.4dde1c4094ae.windowTitle=Install Complete
+InstallFinishAction.4dde1c4094ae.windowTitle=Install Complete
+
+# InstallFrameConfigurator.19faf1fcb1b1.maintModeTitle=Configure $PRODUCT_NAME$
+InstallFrameConfigurator.19faf1fcb1b1.maintModeTitle=Configure $PRODUCT_NAME$
+
+# InstallFrameConfigurator.19faf1fcb1b1.uninstallerTitle=Uninstall $PRODUCT_NAME$
+InstallFrameConfigurator.19faf1fcb1b1.uninstallerTitle=Uninstall $PRODUCT_NAME$
+
+# InstallFrameConfigurator.4dde1c3b9487.maintModeTitle=Configure $PRODUCT_NAME$
+InstallFrameConfigurator.4dde1c3b9487.maintModeTitle=Configure $PRODUCT_NAME$
+
+# InstallFrameConfigurator.4dde1c3b9487.uninstallerTitle=Uninstall $PRODUCT_NAME$
+InstallFrameConfigurator.4dde1c3b9487.uninstallerTitle=Uninstall $PRODUCT_NAME$
+
+# InstallSet.19faf1fcb1b4.description=Choose this option to customize the features to be installed.
+InstallSet.19faf1fcb1b4.description=Choose this option to customize the features to be installed.
+
+# InstallSet.19faf1fcb1b4.imageName=customIcon.png
+InstallSet.19faf1fcb1b4.imageName=customIcon.png
+
+# InstallSet.19faf1fcb1b4.imagePath=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/254563a034ed41e4e80b453700885aba
+InstallSet.19faf1fcb1b4.imagePath=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/254563a034ed41e4e80b453700885aba
+
+# InstallSet.19faf1fcb1b4.installSetName=Custom
+InstallSet.19faf1fcb1b4.installSetName=Custom
+
+# InstallSet.19faf214b292.description=The most common application features will be installed.  This option is recommended for most users.
+InstallSet.19faf214b292.description=The most common application features will be installed.  This option is recommended for most users.
+
+# InstallSet.19faf214b292.imageName=typical.png
+InstallSet.19faf214b292.imageName=typical.png
+
+# InstallSet.19faf214b292.imagePath=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/254563a034ed41e4e80b453700885aba
+InstallSet.19faf214b292.imagePath=$IA_MERGE_RESOURCES$/SQLServer_1692325753448/254563a034ed41e4e80b453700885aba
+
+# InstallSet.19faf214b292.installSetName=Complete
+InstallSet.19faf214b292.installSetName=Complete
+
+# InstallSet.4dde1c3d949b.description=The most common application features will be installed.  This option is recommended for most users.
+InstallSet.4dde1c3d949b.description=The most common application features will be installed.  This option is recommended for most users.
+
+# InstallSet.4dde1c3d949b.imageName=typical.png
+InstallSet.4dde1c3d949b.imageName=typical.png
+
+# InstallSet.4dde1c3d949b.imagePath=com/zerog/ia/installer/images/
+InstallSet.4dde1c3d949b.imagePath=com/zerog/ia/installer/images/
+
+# InstallSet.4dde1c3d949b.installSetName=Complete
+InstallSet.4dde1c3d949b.installSetName=Complete
+
+# InstallSet.4dde28a294db.description=Choose this option to customize the features to be installed.
+InstallSet.4dde28a294db.description=Choose this option to customize the features to be installed.
+
+# InstallSet.4dde28a294db.imageName=customIcon.png
+InstallSet.4dde28a294db.imageName=customIcon.png
+
+# InstallSet.4dde28a294db.imagePath=com/zerog/ia/installer/images/
+InstallSet.4dde28a294db.imagePath=com/zerog/ia/installer/images/
+
+# InstallSet.4dde28a294db.installSetName=Custom
+InstallSet.4dde28a294db.installSetName=Custom
+
+# InstallSummary.19faf164b0f7.stepPrompt=Please Review the Following Before Continuing:
+InstallSummary.19faf164b0f7.stepPrompt=Please Review the Following Before Continuing:
+
+# InstallSummary.19faf164b0f7.title=Pre-Installation Summary
+InstallSummary.19faf164b0f7.title=Pre-Installation Summary
+
+# InstallSummary.4dde1c4094ad.stepPrompt=Please Review the Following Before Continuing:
+InstallSummary.4dde1c4094ad.stepPrompt=Please Review the Following Before Continuing:
+
+# InstallSummary.4dde1c4094ad.title=Pre-Installation Summary
+InstallSummary.4dde1c4094ad.title=Pre-Installation Summary
+
+# InstallUninstaller.19faf25ab545.destinationName=uninstall_sqlserver
+InstallUninstaller.19faf25ab545.destinationName=uninstall_sqlserver
+
+# InstallUninstaller.8405ad1ca1a7.destinationName=uninstall_sqlserver
+InstallUninstaller.8405ad1ca1a7.destinationName=uninstall_sqlserver
+
+# IntroAction.19faf162b0f1.message=InstallAnywhere will guide you through the installation of $PRODUCT_NAME$.\n\nIt is strongly recommended that you quit all programs before continuing with this installation.\n\nClick the 'Next' button to proceed to the next screen. If you want to change something on a previous screen, click the 'Previous' button.\n\nYou may cancel this installation at any time by clicking the 'Cancel' button.
+IntroAction.19faf162b0f1.message=InstallAnywhere will guide you through the installation of $PRODUCT_NAME$.\n\nIt is strongly recommended that you quit all programs before continuing with this installation.\n\nClick the 'Next' button to proceed to the next screen. If you want to change something on a previous screen, click the 'Previous' button.\n\nYou may cancel this installation at any time by clicking the 'Cancel' button.
+
+# IntroAction.19faf162b0f1.stepTitle=Introduction
+IntroAction.19faf162b0f1.stepTitle=Introduction
+
+# IntroAction.4dde1c4194aa.message=InstallAnywhere will guide you through the installation of $PRODUCT_NAME$.\n\nIt is strongly recommended that you quit all programs before continuing with this installation.\n\nClick the 'Next' button to proceed to the next screen. If you want to change something on a previous screen, click the 'Previous' button.\n\nYou may cancel this installation at any time by clicking the 'Cancel' button.
+IntroAction.4dde1c4194aa.message=InstallAnywhere will guide you through the installation of $PRODUCT_NAME$.\n\nIt is strongly recommended that you quit all programs before continuing with this installation.\n\nClick the 'Next' button to proceed to the next screen. If you want to change something on a previous screen, click the 'Previous' button.\n\nYou may cancel this installation at any time by clicking the 'Cancel' button.
+
+# IntroAction.4dde1c4194aa.stepTitle=Introduction
+IntroAction.4dde1c4194aa.stepTitle=Introduction
+
+# MakeRegEntry.19faf239b40b.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+MakeRegEntry.19faf239b40b.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+
+# MakeRegEntry.19faf239b40b.value=$DRIVER_SETTING_FILEEXTNS$
+MakeRegEntry.19faf239b40b.value=$DRIVER_SETTING_FILEEXTNS$
+
+# MakeRegEntry.19faf239b40b.valueName=FileExtns
+MakeRegEntry.19faf239b40b.valueName=FileExtns
+
+# MakeRegEntry.19faf239b40f.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+MakeRegEntry.19faf239b40f.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+
+# MakeRegEntry.19faf239b40f.value=$SERVICE_LIB_DIR$\\$DRIVER_JAR_NAME$.jar
+MakeRegEntry.19faf239b40f.value=$SERVICE_LIB_DIR$\\$DRIVER_JAR_NAME$.jar
+
+# MakeRegEntry.19faf239b40f.valueName=JarFile
+MakeRegEntry.19faf239b40f.valueName=JarFile
+
+# MakeRegEntry.19faf23bb423.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+MakeRegEntry.19faf23bb423.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+
+# MakeRegEntry.19faf23bb423.value=$DRIVER_SETTING_FILEEXTNS$
+MakeRegEntry.19faf23bb423.value=$DRIVER_SETTING_FILEEXTNS$
+
+# MakeRegEntry.19faf23bb423.valueName=FileExtns
+MakeRegEntry.19faf23bb423.valueName=FileExtns
+
+# MakeRegEntry.19faf23bb427.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+MakeRegEntry.19faf23bb427.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+
+# MakeRegEntry.19faf23bb427.value=$SERVICE_LIB_DIR$\\$DRIVER_JAR_NAME$.jar
+MakeRegEntry.19faf23bb427.value=$SERVICE_LIB_DIR$\\$DRIVER_JAR_NAME$.jar
+
+# MakeRegEntry.19faf23bb427.valueName=JarFile
+MakeRegEntry.19faf23bb427.valueName=JarFile
+
+# MakeRegEntry.fb4e46079db8.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+MakeRegEntry.fb4e46079db8.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+
+# MakeRegEntry.fb4e46079db8.value=$DRIVER_SETTING_FILEEXTNS$
+MakeRegEntry.fb4e46079db8.value=$DRIVER_SETTING_FILEEXTNS$
+
+# MakeRegEntry.fb4e46079db8.valueName=FileExtns
+MakeRegEntry.fb4e46079db8.valueName=FileExtns
+
+# MakeRegEntry.fb4e80fba3c5.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+MakeRegEntry.fb4e80fba3c5.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+
+# MakeRegEntry.fb4e80fba3c5.value=$SERVICE_LIB_DIR$\\$DRIVER_JAR_NAME$.jar
+MakeRegEntry.fb4e80fba3c5.value=$SERVICE_LIB_DIR$\\$DRIVER_JAR_NAME$.jar
+
+# MakeRegEntry.fb4e80fba3c5.valueName=JarFile
+MakeRegEntry.fb4e80fba3c5.valueName=JarFile
+
+# MakeRegEntry.fb537e2386ea.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+MakeRegEntry.fb537e2386ea.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+
+# MakeRegEntry.fb537e2386ea.value=$DRIVER_SETTING_FILEEXTNS$
+MakeRegEntry.fb537e2386ea.value=$DRIVER_SETTING_FILEEXTNS$
+
+# MakeRegEntry.fb537e2386ea.valueName=FileExtns
+MakeRegEntry.fb537e2386ea.valueName=FileExtns
+
+# MakeRegEntry.fb537e2386eb.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+MakeRegEntry.fb537e2386eb.key=HKEY_LOCAL_MACHINE\\SOFTWARE\\ODBC\\ODBCINST.INI\\$DRIVER_NAME_REGISTRY$
+
+# MakeRegEntry.fb537e2386eb.value=$SERVICE_LIB_DIR$\\$DRIVER_JAR_NAME$.jar
+MakeRegEntry.fb537e2386eb.value=$SERVICE_LIB_DIR$\\$DRIVER_JAR_NAME$.jar
+
+# MakeRegEntry.fb537e2386eb.valueName=JarFile
+MakeRegEntry.fb537e2386eb.valueName=JarFile
+
+# PrintToConsole.19faf16db102.TheString===>\n==> Post-Install Windows Restart Requested\n==> RESTART_NEEDED: $RESTART_NEEDED$\n==> USER_REQUESTED_RESTART: $USER_REQUESTED_RESTART$\n==>
+PrintToConsole.19faf16db102.TheString===>\n==> Post-Install Windows Restart Requested\n==> RESTART_NEEDED: $RESTART_NEEDED$\n==> USER_REQUESTED_RESTART: $USER_REQUESTED_RESTART$\n==>
+
+# PrintToConsole.19faf1ffb1cf.TheString===>\n==> $ERROR_TITLE$\n==> $ERROR_MSG_1$\n==> $ERROR_MSG_2$\n==>
+PrintToConsole.19faf1ffb1cf.TheString===>\n==> $ERROR_TITLE$\n==> $ERROR_MSG_1$\n==> $ERROR_MSG_2$\n==>
+
+# PrintToConsole.19faf1ffb1d5.TheString===>\n==> PRE-UNINSTALL START\n==>
+PrintToConsole.19faf1ffb1d5.TheString===>\n==> PRE-UNINSTALL START\n==>
+
+# PrintToConsole.19faf202b1ef.TheString===>\n==> PRE-UNINSTALL END\n==>
+PrintToConsole.19faf202b1ef.TheString===>\n==> PRE-UNINSTALL END\n==>
+
+# PrintToConsole.19faf203b1f8.TheString===>\n==> Post-Uninstall Windows Restart Requested\n==> RESTART_NEEDED: $RESTART_NEEDED$\n==> USER_REQUESTED_RESTART: $USER_REQUESTED_RESTART$\n==>
+PrintToConsole.19faf203b1f8.TheString===>\n==> Post-Uninstall Windows Restart Requested\n==> RESTART_NEEDED: $RESTART_NEEDED$\n==> USER_REQUESTED_RESTART: $USER_REQUESTED_RESTART$\n==>
+
+# PrintToConsole.19faf205b21e.TheString===>\n==> Removed left-over driver files:\n==> STDOUT: $EXECUTE_STDOUT$\n==> STDERR: $EXECUTE_STDERR$\n==> EXITCODE: $EXECUTE_EXITCODE$\n==>
+PrintToConsole.19faf205b21e.TheString===>\n==> Removed left-over driver files:\n==> STDOUT: $EXECUTE_STDOUT$\n==> STDERR: $EXECUTE_STDERR$\n==> EXITCODE: $EXECUTE_EXITCODE$\n==>
+
+# PrintToConsole.19faf20fb253.TheString===>\n==> Removed registry key $WINREG_SERVICE_DRIVER_KEY$:\n==> STDOUT: $EXECUTE_STDOUT$\n==> STDERR: $EXECUTE_STDERR$\n==> EXITCODE: $EXECUTE_EXITCODE$\n==>
+PrintToConsole.19faf20fb253.TheString===>\n==> Removed registry key $WINREG_SERVICE_DRIVER_KEY$:\n==> STDOUT: $EXECUTE_STDOUT$\n==> STDERR: $EXECUTE_STDERR$\n==> EXITCODE: $EXECUTE_EXITCODE$\n==>
+
+# PrintToConsole.19faf21bb2e7.TheString===>\n==> Setting HKCU ODBC.INI registry entries...\n==>
+PrintToConsole.19faf21bb2e7.TheString===>\n==> Setting HKCU ODBC.INI registry entries...\n==>
+
+# PrintToConsole.19faf222b321.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_INSTALL_DIR$DOLLAR$ ($USER_INSTALL_DIR$) Actions START\n==>
+PrintToConsole.19faf222b321.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_INSTALL_DIR$DOLLAR$ ($USER_INSTALL_DIR$) Actions START\n==>
+
+# PrintToConsole.19faf222b324.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_INSTALL_DIR$DOLLAR$ ($USER_INSTALL_DIR$) Actions END\n==>
+PrintToConsole.19faf222b324.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_INSTALL_DIR$DOLLAR$ ($USER_INSTALL_DIR$) Actions END\n==>
+
+# PrintToConsole.19faf224b33c.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_MAGIC_FOLDER_1$DOLLAR$ ($USER_MAGIC_FOLDER_1$) Actions START\n==>
+PrintToConsole.19faf224b33c.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_MAGIC_FOLDER_1$DOLLAR$ ($USER_MAGIC_FOLDER_1$) Actions START\n==>
+
+# PrintToConsole.19faf224b33f.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_MAGIC_FOLDER_1$DOLLAR$ ($USER_MAGIC_FOLDER_1$) Actions END\n==>
+PrintToConsole.19faf224b33f.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_MAGIC_FOLDER_1$DOLLAR$ ($USER_MAGIC_FOLDER_1$) Actions END\n==>
+
+# PrintToConsole.19faf228b356.TheString===>\n==> Setting HKLM ODBCINST.INI registry entries...\n==>
+PrintToConsole.19faf228b356.TheString===>\n==> Setting HKLM ODBCINST.INI registry entries...\n==>
+
+# PrintToConsole.19faf22ab373.TheString===>\n==> Creating/Merging odbc.ini & odbcinst.ini files...\n==>
+PrintToConsole.19faf22ab373.TheString===>\n==> Creating/Merging odbc.ini & odbcinst.ini files...\n==>
+
+# PrintToConsole.19faf22eb388.TheString===> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+PrintToConsole.19faf22eb388.TheString===> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+
+# PrintToConsole.19faf22eb38e.TheString===> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+PrintToConsole.19faf22eb38e.TheString===> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+
+# PrintToConsole.19faf236b3f6.TheString===>\n==> Creating service registry entries under key:\n==> $WINREG_SERVICE_DRIVER_KEY$\n==>
+PrintToConsole.19faf236b3f6.TheString===>\n==> Creating service registry entries under key:\n==> $WINREG_SERVICE_DRIVER_KEY$\n==>
+
+# PrintToConsole.19faf243b477.TheString===>\n==> Deleting Readme and Notices files\n==> $READMES_DIR$$/$ODBC for $DRIVER_NAME$ v$VERSION_MAJOR$.$VERSION_MINOR$.0 readme.txt\n==> $NOTICES_DIR$$/$ODBC for $DRIVER_NAME$ v$VERSION_MAJOR$.$VERSION_MINOR$.0 notices.txt\n==>
+PrintToConsole.19faf243b477.TheString===>\n==> Deleting Readme and Notices files\n==> $READMES_DIR$$/$ODBC for $DRIVER_NAME$ v$VERSION_MAJOR$.$VERSION_MINOR$.0 readme.txt\n==> $NOTICES_DIR$$/$ODBC for $DRIVER_NAME$ v$VERSION_MAJOR$.$VERSION_MINOR$.0 notices.txt\n==>
+
+# PrintToConsole.19faf243b483.TheString===> MAC_LIB_DIR=$MAC_LIB_DIR$\n==> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+PrintToConsole.19faf243b483.TheString===> MAC_LIB_DIR=$MAC_LIB_DIR$\n==> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+
+# PrintToConsole.19faf243b48f.TheString===> MAC_LIB_DIR=$MAC_LIB_DIR$\n==> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+PrintToConsole.19faf243b48f.TheString===> MAC_LIB_DIR=$MAC_LIB_DIR$\n==> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+
+# PrintToConsole.19faf24ab4ae.TheString===>\n==> MKDIR_EXECUTE_STDOUT = $MKDIR_EXECUTE_STDOUT$\n==> MKDIR_EXECUTE_STDERR = $MKDIR_EXECUTE_STDERR$\n==> MKDIR_EXECUTE_EXITCODE = $MKDIR_EXECUTE_EXITCODE$\n==> MAC_LIB_DIR = $MAC_LIB_DIR$\n==>
+PrintToConsole.19faf24ab4ae.TheString===>\n==> MKDIR_EXECUTE_STDOUT = $MKDIR_EXECUTE_STDOUT$\n==> MKDIR_EXECUTE_STDERR = $MKDIR_EXECUTE_STDERR$\n==> MKDIR_EXECUTE_EXITCODE = $MKDIR_EXECUTE_EXITCODE$\n==> MAC_LIB_DIR = $MAC_LIB_DIR$\n==>
+
+# PrintToConsole.19faf252b501.TheString=************************Retaining the older licenese***********************\nFINAL_INSTALL_TYPE=$FINAL_INSTALL_TYPE$\nINSTALL_TYPE=$INSTALL_TYPE$\n************************END HERE*******************************************
+PrintToConsole.19faf252b501.TheString=************************Retaining the older licenese***********************\nFINAL_INSTALL_TYPE=$FINAL_INSTALL_TYPE$\nINSTALL_TYPE=$INSTALL_TYPE$\n************************END HERE*******************************************
+
+# PrintToConsole.5103063cbd14.TheString===>\n==> Setting HKCU ODBC.INI registry entries...\n==>
+PrintToConsole.5103063cbd14.TheString===>\n==> Setting HKCU ODBC.INI registry entries...\n==>
+
+# PrintToConsole.57714067b295.TheString===> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+PrintToConsole.57714067b295.TheString===> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+
+# PrintToConsole.57720d6fbeb0.TheString===> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+PrintToConsole.57720d6fbeb0.TheString===> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+
+# PrintToConsole.5c51aab290f1.TheString===>\n==> Deleting Readme and Notices files\n==> $READMES_DIR$$/$ODBC for $DRIVER_NAME$ v$VERSION_MAJOR$.$VERSION_MINOR$.0 readme.txt\n==> $NOTICES_DIR$$/$ODBC for $DRIVER_NAME$ v$VERSION_MAJOR$.$VERSION_MINOR$.0 notices.txt\n==>
+PrintToConsole.5c51aab290f1.TheString===>\n==> Deleting Readme and Notices files\n==> $READMES_DIR$$/$ODBC for $DRIVER_NAME$ v$VERSION_MAJOR$.$VERSION_MINOR$.0 readme.txt\n==> $NOTICES_DIR$$/$ODBC for $DRIVER_NAME$ v$VERSION_MAJOR$.$VERSION_MINOR$.0 notices.txt\n==>
+
+# PrintToConsole.66fe99c8a254.TheString===>\n==> Removed registry key $WINREG_SERVICE_DRIVER_KEY$:\n==> STDOUT: $EXECUTE_STDOUT$\n==> STDERR: $EXECUTE_STDERR$\n==> EXITCODE: $EXECUTE_EXITCODE$\n==>
+PrintToConsole.66fe99c8a254.TheString===>\n==> Removed registry key $WINREG_SERVICE_DRIVER_KEY$:\n==> STDOUT: $EXECUTE_STDOUT$\n==> STDERR: $EXECUTE_STDERR$\n==> EXITCODE: $EXECUTE_EXITCODE$\n==>
+
+# PrintToConsole.67110c5d8df3.TheString===>\n==> PRE-UNINSTALL START\n==>
+PrintToConsole.67110c5d8df3.TheString===>\n==> PRE-UNINSTALL START\n==>
+
+# PrintToConsole.67284b5a8ec8.TheString===>\n==> PRE-UNINSTALL END\n==>
+PrintToConsole.67284b5a8ec8.TheString===>\n==> PRE-UNINSTALL END\n==>
+
+# PrintToConsole.90dcfa4a9461.TheString===> MAC_LIB_DIR=$MAC_LIB_DIR$\n==> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+PrintToConsole.90dcfa4a9461.TheString===> MAC_LIB_DIR=$MAC_LIB_DIR$\n==> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+
+# PrintToConsole.90dd32a7976b.TheString===> MAC_LIB_DIR=$MAC_LIB_DIR$\n==> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+PrintToConsole.90dd32a7976b.TheString===> MAC_LIB_DIR=$MAC_LIB_DIR$\n==> INI_FILE_SOURCE: $INI_FILE_SOURCE$\n==> INI_FILE_TARGET: $INI_FILE_TARGET$\n==> INI_FILE_SOURCE_DELETE: $INI_FILE_SOURCE_DELETE$
+
+# PrintToConsole.a6f4afd690da.TheString===>\n==> Removed left-over driver files:\n==> STDOUT: $EXECUTE_STDOUT$\n==> STDERR: $EXECUTE_STDERR$\n==> EXITCODE: $EXECUTE_EXITCODE$\n==>
+PrintToConsole.a6f4afd690da.TheString===>\n==> Removed left-over driver files:\n==> STDOUT: $EXECUTE_STDOUT$\n==> STDERR: $EXECUTE_STDERR$\n==> EXITCODE: $EXECUTE_EXITCODE$\n==>
+
+# PrintToConsole.a9d23b60a926.TheString===>\n==> $ERROR_TITLE$\n==> $ERROR_MSG_1$\n==> $ERROR_MSG_2$\n==>
+PrintToConsole.a9d23b60a926.TheString===>\n==> $ERROR_TITLE$\n==> $ERROR_MSG_1$\n==> $ERROR_MSG_2$\n==>
+
+# PrintToConsole.c9fb5ea5a3c7.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_MAGIC_FOLDER_1$DOLLAR$ ($USER_MAGIC_FOLDER_1$) Actions START\n==>
+PrintToConsole.c9fb5ea5a3c7.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_MAGIC_FOLDER_1$DOLLAR$ ($USER_MAGIC_FOLDER_1$) Actions START\n==>
+
+# PrintToConsole.c9fceadfa3c7.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_MAGIC_FOLDER_1$DOLLAR$ ($USER_MAGIC_FOLDER_1$) Actions END\n==>
+PrintToConsole.c9fceadfa3c7.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_MAGIC_FOLDER_1$DOLLAR$ ($USER_MAGIC_FOLDER_1$) Actions END\n==>
+
+# PrintToConsole.db4de0e29721.TheString===>\n==> MKDIR_EXECUTE_STDOUT = $MKDIR_EXECUTE_STDOUT$\n==> MKDIR_EXECUTE_STDERR = $MKDIR_EXECUTE_STDERR$\n==> MKDIR_EXECUTE_EXITCODE = $MKDIR_EXECUTE_EXITCODE$\n==> MAC_LIB_DIR = $MAC_LIB_DIR$\n==>
+PrintToConsole.db4de0e29721.TheString===>\n==> MKDIR_EXECUTE_STDOUT = $MKDIR_EXECUTE_STDOUT$\n==> MKDIR_EXECUTE_STDERR = $MKDIR_EXECUTE_STDERR$\n==> MKDIR_EXECUTE_EXITCODE = $MKDIR_EXECUTE_EXITCODE$\n==> MAC_LIB_DIR = $MAC_LIB_DIR$\n==>
+
+# PrintToConsole.dd458cbc985c.TheString=************************Retaining the older licenese***********************\nFINAL_INSTALL_TYPE=$FINAL_INSTALL_TYPE$\nINSTALL_TYPE=$INSTALL_TYPE$\n************************END HERE*******************************************
+PrintToConsole.dd458cbc985c.TheString=************************Retaining the older licenese***********************\nFINAL_INSTALL_TYPE=$FINAL_INSTALL_TYPE$\nINSTALL_TYPE=$INSTALL_TYPE$\n************************END HERE*******************************************
+
+# PrintToConsole.e7fac9638e6b.TheString===>\n==> Post-Install Windows Restart Requested\n==> RESTART_NEEDED: $RESTART_NEEDED$\n==> USER_REQUESTED_RESTART: $USER_REQUESTED_RESTART$\n==>
+PrintToConsole.e7fac9638e6b.TheString===>\n==> Post-Install Windows Restart Requested\n==> RESTART_NEEDED: $RESTART_NEEDED$\n==> USER_REQUESTED_RESTART: $USER_REQUESTED_RESTART$\n==>
+
+# PrintToConsole.e8006e6a8f3a.TheString===>\n==> Post-Uninstall Windows Restart Requested\n==> RESTART_NEEDED: $RESTART_NEEDED$\n==> USER_REQUESTED_RESTART: $USER_REQUESTED_RESTART$\n==>
+PrintToConsole.e8006e6a8f3a.TheString===>\n==> Post-Uninstall Windows Restart Requested\n==> RESTART_NEEDED: $RESTART_NEEDED$\n==> USER_REQUESTED_RESTART: $USER_REQUESTED_RESTART$\n==>
+
+# PrintToConsole.ee34ae5da6d4.TheString===>\n==> Setting HKLM ODBCINST.INI registry entries...\n==>
+PrintToConsole.ee34ae5da6d4.TheString===>\n==> Setting HKLM ODBCINST.INI registry entries...\n==>
+
+# PrintToConsole.f1f04d0d9ff8.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_INSTALL_DIR$DOLLAR$ ($USER_INSTALL_DIR$) Actions START\n==>
+PrintToConsole.f1f04d0d9ff8.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_INSTALL_DIR$DOLLAR$ ($USER_INSTALL_DIR$) Actions START\n==>
+
+# PrintToConsole.f21266999ffa.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_INSTALL_DIR$DOLLAR$ ($USER_INSTALL_DIR$) Actions END\n==>
+PrintToConsole.f21266999ffa.TheString===>\n==> INSTALL sqlserver_win64 $DOLLAR$USER_INSTALL_DIR$DOLLAR$ ($USER_INSTALL_DIR$) Actions END\n==>
+
+# PrintToConsole.f28c183a9344.TheString===>\n==> Creating/Merging odbc.ini & odbcinst.ini files...\n==>
+PrintToConsole.f28c183a9344.TheString===>\n==> Creating/Merging odbc.ini & odbcinst.ini files...\n==>
+
+# PrintToConsole.fb19352296f0.TheString===>\n==> Creating service registry entries under key:\n==> $WINREG_SERVICE_DRIVER_KEY$\n==>
+PrintToConsole.fb19352296f0.TheString===>\n==> Creating service registry entries under key:\n==> $WINREG_SERVICE_DRIVER_KEY$\n==>
+
+# PromptUserConsole.19faf1ffb1d3.message=$ERROR_MSG_1$\n\n$ERROR_MSG_2$
+PromptUserConsole.19faf1ffb1d3.message=$ERROR_MSG_1$\n\n$ERROR_MSG_2$
+
+# PromptUserConsole.19faf1ffb1d3.option0Label=Exit
+PromptUserConsole.19faf1ffb1d3.option0Label=Exit
+
+# PromptUserConsole.19faf1ffb1d3.option1Label=Cancel
+PromptUserConsole.19faf1ffb1d3.option1Label=Cancel
+
+# PromptUserConsole.19faf1ffb1d3.option2Label=Details...
+PromptUserConsole.19faf1ffb1d3.option2Label=Details...
+
+# PromptUserConsole.19faf1ffb1d3.title=$ERROR_TITLE$
+PromptUserConsole.19faf1ffb1d3.title=$ERROR_TITLE$
+
+# PromptUserConsole.a973d7058ec6.message=$ERROR_MSG_1$\n\n$ERROR_MSG_2$
+PromptUserConsole.a973d7058ec6.message=$ERROR_MSG_1$\n\n$ERROR_MSG_2$
+
+# PromptUserConsole.a973d7058ec6.option0Label=Exit
+PromptUserConsole.a973d7058ec6.option0Label=Exit
+
+# PromptUserConsole.a973d7058ec6.option1Label=Cancel
+PromptUserConsole.a973d7058ec6.option1Label=Cancel
+
+# PromptUserConsole.a973d7058ec6.option2Label=Details...
+PromptUserConsole.a973d7058ec6.option2Label=Details...
+
+# PromptUserConsole.a973d7058ec6.title=$ERROR_TITLE$
+PromptUserConsole.a973d7058ec6.title=$ERROR_TITLE$
+
+# ShowDialogAction.19faf1ffb1d1.buttonLabel=Exit
+ShowDialogAction.19faf1ffb1d1.buttonLabel=Exit
+
+# ShowDialogAction.19faf1ffb1d1.cancelButtonLabel=Cancel
+ShowDialogAction.19faf1ffb1d1.cancelButtonLabel=Cancel
+
+# ShowDialogAction.19faf1ffb1d1.detailsButtonLabel=Details...
+ShowDialogAction.19faf1ffb1d1.detailsButtonLabel=Details...
+
+# ShowDialogAction.19faf1ffb1d1.label=$ERROR_MSG_1$\n\n$ERROR_MSG_2$
+ShowDialogAction.19faf1ffb1d1.label=$ERROR_MSG_1$\n\n$ERROR_MSG_2$
+
+# ShowDialogAction.19faf1ffb1d1.narrative=$NULL$
+ShowDialogAction.19faf1ffb1d1.narrative=$NULL$
+
+# ShowDialogAction.19faf1ffb1d1.title=$ERROR_TITLE$
+ShowDialogAction.19faf1ffb1d1.title=$ERROR_TITLE$
+
+# ShowDialogAction.a973c9e78e7c.buttonLabel=Exit
+ShowDialogAction.a973c9e78e7c.buttonLabel=Exit
+
+# ShowDialogAction.a973c9e78e7c.cancelButtonLabel=Cancel
+ShowDialogAction.a973c9e78e7c.cancelButtonLabel=Cancel
+
+# ShowDialogAction.a973c9e78e7c.detailsButtonLabel=Details...
+ShowDialogAction.a973c9e78e7c.detailsButtonLabel=Details...
+
+# ShowDialogAction.a973c9e78e7c.label=$ERROR_MSG_1$\n\n$ERROR_MSG_2$
+ShowDialogAction.a973c9e78e7c.label=$ERROR_MSG_1$\n\n$ERROR_MSG_2$
+
+# ShowDialogAction.a973c9e78e7c.narrative=$NULL$
+ShowDialogAction.a973c9e78e7c.narrative=$NULL$
+
+# ShowDialogAction.a973c9e78e7c.title=$ERROR_TITLE$
+ShowDialogAction.a973c9e78e7c.title=$ERROR_TITLE$
+
+# SpeedASCIIFileManipulator.19faf21eb309.additionalText=
+SpeedASCIIFileManipulator.19faf21eb309.additionalText=
+
+# SpeedASCIIFileManipulator.f0aec87483a7.additionalText=
+SpeedASCIIFileManipulator.f0aec87483a7.additionalText=
+
+# UCustomAction.19faf209b22b.dialogLabel=Removing $DRIVER_NAME$ from $INI_FILE_TARGET$
+UCustomAction.19faf209b22b.dialogLabel=Removing $DRIVER_NAME$ from $INI_FILE_TARGET$
+
+# UCustomAction.19faf20bb235.dialogLabel=Removing $DRIVER_NAME$ from $INI_FILE_TARGET$
+UCustomAction.19faf20bb235.dialogLabel=Removing $DRIVER_NAME$ from $INI_FILE_TARGET$
+
+# UCustomAction.9210c8c6ad96.dialogLabel=Removing $DRIVER_NAME$ from $INI_FILE_TARGET$
+UCustomAction.9210c8c6ad96.dialogLabel=Removing $DRIVER_NAME$ from $INI_FILE_TARGET$
+
+# UCustomAction.9236629181ed.dialogLabel=Removing $DRIVER_NAME$ from $INI_FILE_TARGET$
+UCustomAction.9236629181ed.dialogLabel=Removing $DRIVER_NAME$ from $INI_FILE_TARGET$
+
+# UninstallAllOrFeaturesAction.19faf201b1e3.allDescription=Completely remove all features and components of $PRODUCT_NAME$ that were installed by InstallAnywhere. Files and folders created after the installation will not be affected.
+UninstallAllOrFeaturesAction.19faf201b1e3.allDescription=Completely remove all features and components of $PRODUCT_NAME$ that were installed by InstallAnywhere. Files and folders created after the installation will not be affected.
+
+# UninstallAllOrFeaturesAction.19faf201b1e3.allLabel=Complete Uninstall
+UninstallAllOrFeaturesAction.19faf201b1e3.allLabel=Complete Uninstall
+
+# UninstallAllOrFeaturesAction.19faf201b1e3.instructions=Please select one of the following options:
+UninstallAllOrFeaturesAction.19faf201b1e3.instructions=Please select one of the following options:
+
+# UninstallAllOrFeaturesAction.19faf201b1e3.someDescription=Choose specific features of $PRODUCT_NAME$ that were installed by InstallAnywhere to be uninstalled.
+UninstallAllOrFeaturesAction.19faf201b1e3.someDescription=Choose specific features of $PRODUCT_NAME$ that were installed by InstallAnywhere to be uninstalled.
+
+# UninstallAllOrFeaturesAction.19faf201b1e3.someLabel=Uninstall Specific Features
+UninstallAllOrFeaturesAction.19faf201b1e3.someLabel=Uninstall Specific Features
+
+# UninstallAllOrFeaturesAction.19faf201b1e3.stepTitle=Uninstall Options
+UninstallAllOrFeaturesAction.19faf201b1e3.stepTitle=Uninstall Options
+
+# UninstallAllOrFeaturesAction.8c95ee0d9032.allDescription=Completely remove all features and components of $PRODUCT_NAME$ that were installed by InstallAnywhere. Files and folders created after the installation will not be affected.
+UninstallAllOrFeaturesAction.8c95ee0d9032.allDescription=Completely remove all features and components of $PRODUCT_NAME$ that were installed by InstallAnywhere. Files and folders created after the installation will not be affected.
+
+# UninstallAllOrFeaturesAction.8c95ee0d9032.allLabel=Complete Uninstall
+UninstallAllOrFeaturesAction.8c95ee0d9032.allLabel=Complete Uninstall
+
+# UninstallAllOrFeaturesAction.8c95ee0d9032.instructions=Please select one of the following options:
+UninstallAllOrFeaturesAction.8c95ee0d9032.instructions=Please select one of the following options:
+
+# UninstallAllOrFeaturesAction.8c95ee0d9032.someDescription=Choose specific features of $PRODUCT_NAME$ that were installed by InstallAnywhere to be uninstalled.
+UninstallAllOrFeaturesAction.8c95ee0d9032.someDescription=Choose specific features of $PRODUCT_NAME$ that were installed by InstallAnywhere to be uninstalled.
+
+# UninstallAllOrFeaturesAction.8c95ee0d9032.someLabel=Uninstall Specific Features
+UninstallAllOrFeaturesAction.8c95ee0d9032.someLabel=Uninstall Specific Features
+
+# UninstallAllOrFeaturesAction.8c95ee0d9032.stepTitle=Uninstall Options
+UninstallAllOrFeaturesAction.8c95ee0d9032.stepTitle=Uninstall Options
+
+# UninstallCategory.19faf203b1fa.categoryName=Files
+UninstallCategory.19faf203b1fa.categoryName=Files
+
+# UninstallCategory.19faf20bb238.categoryName=LaunchAnywheres
+UninstallCategory.19faf20bb238.categoryName=LaunchAnywheres
+
+# UninstallCategory.19faf20db23d.categoryName=Shortcuts/Links/Aliases
+UninstallCategory.19faf20db23d.categoryName=Shortcuts/Links/Aliases
+
+# UninstallCategory.19faf20db243.categoryName=Registry Entries
+UninstallCategory.19faf20db243.categoryName=Registry Entries
+
+# UninstallCategory.19faf20fb256.categoryName=Native Packages
+UninstallCategory.19faf20fb256.categoryName=Native Packages
+
+# UninstallCategory.19faf211b268.categoryName=Others Category
+UninstallCategory.19faf211b268.categoryName=Others Category
+
+# UninstallCategory.19faf212b262.categoryName=Folders
+UninstallCategory.19faf212b262.categoryName=Folders
+
+# UninstallCategory.4dde1c3b9491.categoryName=LaunchAnywheres
+UninstallCategory.4dde1c3b9491.categoryName=LaunchAnywheres
+
+# UninstallCategory.4dde1c3b9492.categoryName=Registry Entries
+UninstallCategory.4dde1c3b9492.categoryName=Registry Entries
+
+# UninstallCategory.4dde1c3c9490.categoryName=Files
+UninstallCategory.4dde1c3c9490.categoryName=Files
+
+# UninstallCategory.4dde1c3c9491.categoryName=Shortcuts/Links/Aliases
+UninstallCategory.4dde1c3c9491.categoryName=Shortcuts/Links/Aliases
+
+# UninstallCategory.4dde1c3c9492.categoryName=Native Packages
+UninstallCategory.4dde1c3c9492.categoryName=Native Packages
+
+# UninstallCategory.4dde1c3c9493.categoryName=Others Category
+UninstallCategory.4dde1c3c9493.categoryName=Others Category
+
+# UninstallCategory.4dde1c3e9492.categoryName=Folders
+UninstallCategory.4dde1c3e9492.categoryName=Folders
+
+# UninstallCompleteAction.19faf203b1f1.rebootNotNeededMessage=
+UninstallCompleteAction.19faf203b1f1.rebootNotNeededMessage=
+
+# UninstallCompleteAction.19faf203b1f1.rebootRecommendedMessage=You should restart the system to complete the uninstallation.
+UninstallCompleteAction.19faf203b1f1.rebootRecommendedMessage=You should restart the system to complete the uninstallation.
+
+# UninstallCompleteAction.19faf203b1f1.rebootRequiredMessage=You need to restart the system to complete the uninstallation.
+UninstallCompleteAction.19faf203b1f1.rebootRequiredMessage=You need to restart the system to complete the uninstallation.
+
+# UninstallCompleteAction.19faf203b1f1.stepTitle=Uninstall Complete
+UninstallCompleteAction.19faf203b1f1.stepTitle=Uninstall Complete
+
+# UninstallCompleteAction.19faf203b1f1.uninstallIncompleteMessage=The following items could not be removed:
+UninstallCompleteAction.19faf203b1f1.uninstallIncompleteMessage=The following items could not be removed:
+
+# UninstallCompleteAction.19faf203b1f1.uninstallSkippedMessage=Unable to uninstall $PRODUCT_NAME$.
+UninstallCompleteAction.19faf203b1f1.uninstallSkippedMessage=Unable to uninstall $PRODUCT_NAME$.
+
+# UninstallCompleteAction.19faf203b1f1.uninstallSuccessMessage=All items were successfully uninstalled.
+UninstallCompleteAction.19faf203b1f1.uninstallSuccessMessage=All items were successfully uninstalled.
+
+# UninstallCompleteAction.4dde1c3e94a8.rebootNotNeededMessage=
+UninstallCompleteAction.4dde1c3e94a8.rebootNotNeededMessage=
+
+# UninstallCompleteAction.4dde1c3e94a8.rebootRecommendedMessage=You should restart the system to complete the uninstallation.
+UninstallCompleteAction.4dde1c3e94a8.rebootRecommendedMessage=You should restart the system to complete the uninstallation.
+
+# UninstallCompleteAction.4dde1c3e94a8.rebootRequiredMessage=You need to restart the system to complete the uninstallation.
+UninstallCompleteAction.4dde1c3e94a8.rebootRequiredMessage=You need to restart the system to complete the uninstallation.
+
+# UninstallCompleteAction.4dde1c3e94a8.stepTitle=Uninstall Complete
+UninstallCompleteAction.4dde1c3e94a8.stepTitle=Uninstall Complete
+
+# UninstallCompleteAction.4dde1c3e94a8.uninstallIncompleteMessage=The following items could not be removed:
+UninstallCompleteAction.4dde1c3e94a8.uninstallIncompleteMessage=The following items could not be removed:
+
+# UninstallCompleteAction.4dde1c3e94a8.uninstallSkippedMessage=Unable to uninstall $PRODUCT_NAME$.
+UninstallCompleteAction.4dde1c3e94a8.uninstallSkippedMessage=Unable to uninstall $PRODUCT_NAME$.
+
+# UninstallCompleteAction.4dde1c3e94a8.uninstallSuccessMessage=All items were successfully uninstalled.
+UninstallCompleteAction.4dde1c3e94a8.uninstallSuccessMessage=All items were successfully uninstalled.
+
+# UninstallIntroAction.19faf200b1db.message=About to uninstall...\n\n$PRODUCT_NAME$\n\nInstallAnywhere will remove the features that were installed during product installation.  Files and folders created after installation will not be removed.
+UninstallIntroAction.19faf200b1db.message=About to uninstall...\n\n$PRODUCT_NAME$\n\nInstallAnywhere will remove the features that were installed during product installation.  Files and folders created after installation will not be removed.
+
+# UninstallIntroAction.19faf200b1db.stepTitle=Uninstall $PRODUCT_NAME$
+UninstallIntroAction.19faf200b1db.stepTitle=Uninstall $PRODUCT_NAME$
+
+# UninstallIntroAction.4dde1c3f94a3.message=About to uninstall...\n\n$PRODUCT_NAME$\n\nInstallAnywhere will remove the features that were installed during product installation.  Files and folders created after installation will not be removed.
+UninstallIntroAction.4dde1c3f94a3.message=About to uninstall...\n\n$PRODUCT_NAME$\n\nInstallAnywhere will remove the features that were installed during product installation.  Files and folders created after installation will not be removed.
+
+# UninstallIntroAction.4dde1c3f94a3.stepTitle=Uninstall $PRODUCT_NAME$
+UninstallIntroAction.4dde1c3f94a3.stepTitle=Uninstall $PRODUCT_NAME$
+

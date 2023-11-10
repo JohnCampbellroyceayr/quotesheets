@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Plugin</title>
+</head>
+<body>
+<font size=1><b>This folder contains code, documents, and information that is licensed under the terms of the Zero G Software Developer Network (DevNet) license agreement. By downloading, viewing, or otherwise using this code, you agree to the terms of that license agreement. See http://www.ZeroG.com/devnet for more information.</b></font>
+<br>
+<br>
+<hr>
+<br>
+<h2>Custom Code Action: ModifyString</h2>
+<br>
+Classname: com.zerog.ia.customcode.utils.ModifyString
+<br>
+<br>
+<b>Description:</b> This class calls allows you to modify a String value.  ModifyString makes calls to Jakarta's Regexp, allowing you to search and replace regular expressions based on Regexp 1.2.
+<br>
+<br>
+<b>Input InstallAnywhere Variables:</b>
+<br>
+<br>
+$MS_STRING_TO_CONVERT$:  Set this variable with the string value that you would like to Modify.  This InstallAnywhere variable can be set to the value of another InstallAnywhere variable.  (i.e. $MS_STRING_TO_CONVERT$ = $USER_INSTALL_DIR$).
+<br>
+<br>
+$MS_SEARCH_AND_REPLACE$:  Set this variable to "all" or "first" (without quotes).
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;all - replace all occurrences of the regular expression ($MS_SEARCH_STRING$).
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;first - replace the first occurrence of the regular expression ($MS_SEARCH_STRING$).
+<br>
+<br>
+$MS_SEARCH_STRING$:  Set this variable to the expression you would like to search for.
+<br>
+<br>
+$MS_REPLACE_STRING$:  Set this variable to the string that you would like to replace the $MS_SEARCH_STRING$ expression with.
+<br>
+<br>
+<b>Output InstallAnywhere Variables:</b>
+<br>
+<br>
+$MS_NEW_SAR_STRING$:  This variable will be set with the new string value based on $MS_SEARCH_STRING$ and $MS_REPLACE_STRING$.  <i>(* Remember that $MS_SEARCH_AND_REPLACE$ must be set to true in order for this value to be set)</i>
+<br>
+<br>
+$MS_PARENT_DIR$:  If the value of $MS_STRING_TO_CONVERT$ is a file or directory, this variable will contain $MS_STRING_TO_CONVERT$'s parent directory.
+<br>
+<br>
+$MS_ROOT_DIR$:  If the value of$MS_STRING_TO_CONVERT$ is a file or directory, this variable will contain $MS_STRING_TO_CONVERT$'s root directory.
+<br>
+<br>
+$ MS_STRING_DBS$:  If the value of $MS_STRING_TO_CONVERT$ is a file or directory, this string will contain a converted path containing double back slashes.
+<br>
+<br>
+$ MS_STRING_FS$:  If the value of $MS_STRING_TO_CONVERT$ is a file or directory, this string will contain a converted path containing forward slashes.
+<br>
+<br>
+$ MS_STRING_LENGTH$:  This variable will contain the length of the value of $MS_STRING_TO_CONVERT$.
+<br>
+<br>
+$MS_STRING_LOWERCASE$:  This variable will contain the value of $MS_STRING_TO_CONVERT$ in all lowercase.
+<br>
+<br>
+$ MS_STRING_TRIM$:  This variable will be set with value of $MS_STRING_TO_CONVERT$  with all white spaces removed from both ends of the string.
+<br>
+<br>
+$ MS_STRING_UPPERCASE$:  This variable will contain the value of $MS_STRING_TO_CONVERT$ in all uppercase.
+<br>
+<br>
+<b>General Instructions:</b>
+<br>
+<br>
+In order for the action to work correctly make sure to set $MS_STRING_TO_CONVERT$ to the string you would like to modify.
+<br>
+<br>
+If you would like to make use of the search and replace function, you'll need to make sure to set the following three variables.
+<br>
+<br>
+$MS_SEARCH_AND_REPLACE$
+<br>
+$MS_SEARCH_STRING$
+<br>
+$MS_REPLACE_STRING$
+<br>
+<br>
+<i>(* Please see the <b>Input InstallAnywhere Variables</b> section above for more detailed information on how to set these variables)</i>
+<br>
+<br>
+Thank you,
+<br>
+Zero G Developer Solutions.
+<br>
+<br>
+<b>Additional Notes:</b>
+<br>
+<br>
+<br>
+<br>
+
+<font size=1>20 November 2003</font>
+</body>
+</html>

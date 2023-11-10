@@ -1,0 +1,8 @@
+com/progress/datadirect/common/CustomCodeLogger.class
+com/progress/datadirect/common/GetExistingDriverDetail.class
+com/progress/datadirect/odbc/action/INIFile$INIProperty.class
+com/progress/datadirect/odbc/action/INIFile$INISection.class
+com/progress/datadirect/odbc/action/INIFile.class
+com/progress/datadirect/odbc/action/MergeIniFiles.class
+com/progress/datadirect/odbc/rule/JVM15Rule.class
+com/progress/datadirect/odbc/rule/JVM16Rule.class
