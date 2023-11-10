@@ -52,19 +52,30 @@ app.post('/test', (req, res) => {
  });
 });
 
-app.get('/api/customer/name/:id', async (req, res) => {
-    const customerId = req.params.id;
-    const custList = await getCustomerName(customerId, 20);
-    console.log(custList);
-    res.json(custList);
+// app.get('/api/customer/name/:id', async (req, res) => {
+//     const customerId = req.params.id;
+//     const custList = await getCustomerName(customerId, 20, 20);
+//     console.log(custList);
+//     res.json(custList);
+// });
+
+app.post('/api/customer/name', async (req, res) => {
+    const name = req.body.name;
+    const limit = req.body.limit;
+    const offset = req.body.offset;
+    if(offset >= 0 && limit > 0) {
+        const custList = await getCustomerName(name, limit, offset);
+        console.log(custList);
+        res.json(custList);
+    }
+    else {
+        res.json([]);
+    }
 });
 
 app.get('/api/customer/index/:id', async (req, res) => {
-    // console.log(req.body);
-
     const customerIndex = req.params.id;
     const custList = await getCustomerIndex(customerIndex, 20);
-    // console.log(custList);
     res.json(custList);
 });
 

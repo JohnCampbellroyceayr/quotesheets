@@ -1,10 +1,12 @@
+import { query } from 'express';
 import connectODBC from '../databases/odbcconnection.js';
 const ODBC = await connectODBC();
 
-export async function getCustomerName(name, limit) {
+export async function getCustomerName(name, limit, offset) {
     return new Promise((resolve, reject) => {
         const searchName = "%" + name.toLowerCase() + "%";
-        ODBC.query('SELECT TRIM(BVNAME) FROM CUST WHERE LOWER(BVNAME) LIKE ? ORDER BY BVNAME LIMIT ?', [searchName, limit], (error, result) => {
+        const query = "SELECT TRIM(BVNAME) FROM CUST WHERE LOWER(BVNAME) LIKE ? ORDER BY BVNAME OFFSET ? ROWS FETCH NEXT ? ROWS ONLY";
+        ODBC.query(query, [searchName, offset, limit], (error, result) => {
             if (error) {
                 console.error(error);
                 reject(error);
