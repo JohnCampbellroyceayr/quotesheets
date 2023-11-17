@@ -2,8 +2,8 @@ import express from "express";
 // import connectMysql from "./src/databases/mysqlconnection.js";
 // import connectODBC from "./src/databases/odbcconnection.js";
 
-import { getQuote } from "./src/requests/quote.js";
-import { getCustomerName, getCustomerIndex } from "./src/requests/customer.js"
+import { getAllQuotes, getQuote, getQuoteName, getQuoteIndex } from "./src/requests/quote.js";
+import { getCustomerName, getCustomerIndex } from "./src/requests/customer.js";
 
 // const mysql = await connectMysql();
 // const ODBC = await connectODBC();
@@ -65,7 +65,6 @@ app.post('/api/customer/name', async (req, res) => {
     const offset = req.body.offset;
     if(offset >= 0 && limit > 0) {
         const custList = await getCustomerName(name, limit, offset);
-        console.log(custList);
         res.json(custList);
     }
     else {
@@ -73,9 +72,10 @@ app.post('/api/customer/name', async (req, res) => {
     }
 });
 
-app.get('/api/customer/index/:id', async (req, res) => {
-    const customerIndex = req.params.id;
-    const custList = await getCustomerIndex(customerIndex, 20);
+app.post('/api/customer/index', async (req, res) => {
+    const limit = req.body.limit;
+    const offset = req.body.offset;
+    const custList = await getCustomerIndex(offset, limit);
     res.json(custList);
 });
 
@@ -84,6 +84,29 @@ app.get('/api/quote/:id', async (req, res) => {
     const quote = await getQuote(quoteId);
     res.json(quote);
 });
+
+app.post('/api/quotes/index', async (req, res) => {
+    const offset = req.body.offset;
+    const limit = req.body.limit;
+    console.log(offset);
+    console.log(limit);
+    const quotes = await getQuoteIndex(offset, limit);
+    res.json(quotes);
+});
+
+app.post('/api/quotes/name', async (req, res) => {
+    const name = req.body.name;
+    const limit = req.body.limit;
+    const offset = req.body.offset;
+    if(offset >= 0 && limit > 0) {
+        const quoteList = await getQuoteName(name, offset, limit);
+        res.json(quoteList);
+    }
+    else {
+        res.json([]);
+    }
+});
+
 
 app.listen(2000, () => {
     console.log('Server is running on port 2000');

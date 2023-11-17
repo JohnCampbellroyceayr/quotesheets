@@ -8,7 +8,7 @@ export async function getCustomerName(name, limit, offset) {
         
         const searchName = isNaN(name) ? "%" + name.toLowerCase() + "%" : "%" + name + "%";
         const query = `
-            SELECT TRIM(BVNAME) AS NAME, TRIM(BVCUST) AS NUMBER,
+            SELECT TRIM(BVNAME) AS NAME, TRIM(BVCUST) AS NUMBER, BVTYPE AS TYPE,
                 TRIM(BVADR1),
                 TRIM(BVADR2),
                 TRIM(BVADR3),
@@ -35,7 +35,8 @@ export async function getCustomerName(name, limit, offset) {
                 custArr.push({
                     name: result[i]["NAME"],
                     number: result[i]["NUMBER"],
-                    address: makeAddress(result[i])
+                    address: makeAddress(result[i]),
+                    type: (result[i]["TYPE"] == "S") ? "" : result[i]["TYPE"]
                 });
             }
             const selectFields = `
@@ -71,8 +72,8 @@ export async function getCustomerName(name, limit, offset) {
 
 export async function getCustomerIndex(index, limit) {
     return new Promise((resolve, reject) => {
-        const query = `
-            SELECT TRIM(BVNAME) AS NAME, TRIM(BVCUST) AS NUMBER,
+        let query = `
+            SELECT TRIM(BVNAME) AS NAME, TRIM(BVCUST) AS NUMBER, BVTYPE AS TYPE,
                 TRIM(BVADR1),
                 TRIM(BVADR2),
                 TRIM(BVADR3),
@@ -89,7 +90,8 @@ export async function getCustomerIndex(index, limit) {
             OFFSET ? ROWS
             FETCH NEXT ? ROWS ONLY
         `;
-        ODBC.query(query, [index, limit], (error, result) => {
+        const searchIndex = (index > 0) ? index - 1 : 0;
+        ODBC.query(query, [searchIndex, limit], (error, result) => {
             if (error) {
                 console.error(error);
                 reject(error);
@@ -100,7 +102,8 @@ export async function getCustomerIndex(index, limit) {
                 custArr.push({
                     name: result[i]["NAME"],
                     number: result[i]["NUMBER"],
-                    address: makeAddress(result[i])
+                    address: makeAddress(result[i]),
+                    type: (result[i]["TYPE"] == "S") ? "" : result[i]["TYPE"]
                 });
             }
             if(custArr.length == 0) {
@@ -129,7 +132,7 @@ export async function getCustomerIndex(index, limit) {
                                 address: makeAddress(res[i])
                             });
                         }
-                        resolve(mergeArrays(custArr, newcustArr, limit));
+                        resolve(mergeArrays(custArr, newcustArr, (index == 0) ? 0 : 1, limit));
                     } else {
                         resolve(custArr);
                     }
@@ -143,7 +146,7 @@ function makeAddress(obj) {
     let addressString = '';
 
     for (let prop in obj) {
-        if (prop !== 'NAME' && prop !== 'NUMBER' && obj[prop] != '') {
+        if (prop !== 'NAME' && prop !== 'NUMBER' && prop !== 'TYPE' && obj[prop] != '') {
             addressString += obj[prop] + ' ';
         }
     }

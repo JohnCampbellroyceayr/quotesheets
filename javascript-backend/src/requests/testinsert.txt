@@ -1,0 +1,21 @@
+// const custNum = "NEW##0";
+// const custName = "A nice Guy";
+
+// const custAddre = "Me Sheet, NO";
+
+// const items = JSON.stringify([2, 1, 6]);
+
+// const description = "A good quote";
+
+// const custom = JSON.stringify({
+//   "Part": "A nice part",
+//   "PartNumber": "A nice part Number",
+// });
+
+
+
+// mysql.query('INSERT INTO Quotes (customer_number, customer_name, customer_address, items, description, custom) VALUES (?, ?, ?, ?, ?, ?);', [custNum, custName, custAddre, items, description, custom], (err, result) => {
+//   if (err) {
+//     reject(err);
+//   }
+// });
