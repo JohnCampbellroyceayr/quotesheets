@@ -1,43 +1,7 @@
 import express from "express";
-// import connectMysql from "./src/databases/mysqlconnection.js";
-// import connectODBC from "./src/databases/odbcconnection.js";
 
-import { getAllQuotes, getQuote, getQuoteName, getQuoteIndex } from "./src/requests/quote.js";
-import { getCustomerName, getCustomerIndex } from "./src/requests/customer.js";
-
-// const mysql = await connectMysql();
-// const ODBC = await connectODBC();
-
-// console.log(ODBC);
-// ODBC.query('SELECT BVNAME FROM CUST', (error, result) => {
-//     if (error) {
-//         console.error(error);
-//         return;
-//     }
-//     let str = '';
-//     result.forEach(line => {
-//         str += line["BVNAME"] + '\n';
-//     });
-//     fs.writeFileSync("./output.txt", str);
-//     // console.log(result);
-// });
-
-
-// const quote = {
-//     customer_number: 'John01',
-//     customer_name: 'John Campbell',
-//     customer_address: '1223 Road, Strathroy, Ontario, Canada',
-//     items: JSON.stringify([1, 2]),
-//     description: 'A quote for mr. Campbell',
-//     custom: JSON.stringify({ PartNumberFace: 'John is good' })
-// };
-
-// mysql.query('INSERT INTO Quotes SET ?', quote, (err, result) => {
-//     if (err) throw err;
-//     console.log('Quote inserted successfully!');
-//     console.log(result);
-//     // connection.end();
-// });
+import { getAllQuotes, getQuote, getQuoteName, getQuoteIndex, deleteQuote } from "./src/requests/quote.js";
+import { getCustomerName, getCustomerIndex, addCustomer } from "./src/requests/customer.js";
 
 const app = express();
 import cors from 'cors';
@@ -79,6 +43,11 @@ app.post('/api/customer/index', async (req, res) => {
     res.json(custList);
 });
 
+app.post('/api/customer/add', async (req, res) => {
+    const message = addCustomer(req.body);
+    res.json({success: true});
+});
+
 app.get('/api/quote/:id', async (req, res) => {
     const quoteId = req.params.id;
     const quote = await getQuote(quoteId);
@@ -88,8 +57,6 @@ app.get('/api/quote/:id', async (req, res) => {
 app.post('/api/quotes/index', async (req, res) => {
     const offset = req.body.offset;
     const limit = req.body.limit;
-    console.log(offset);
-    console.log(limit);
     const quotes = await getQuoteIndex(offset, limit);
     res.json(quotes);
 });
@@ -107,6 +74,11 @@ app.post('/api/quotes/name', async (req, res) => {
     }
 });
 
+app.post('/api/quotes/delete', async (req, res) => {
+    const id = req.body.id;
+    const quoteConfirm = await deleteQuote(id);
+    res.json({success: quoteConfirm});
+});
 
 app.listen(2000, () => {
     console.log('Server is running on port 2000');

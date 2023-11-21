@@ -27,7 +27,6 @@ export async function getQuoteName(name, offset, limit) {
       if (err) {
         reject(err);
       }
-      console.log(result.slice(offset, limit + offset));
       resolve(result.slice(offset, limit + offset));
     });
   });
@@ -40,9 +39,7 @@ export async function getQuoteIndex(offset, limit) {
       FROM Quotes
       LIMIT ? OFFSET ?
     `;
-    console.log("asdf");
     mysql.query(query, [limit, offset], (err, result) => {
-      console.log(result);
       resolve(result);
     });
   });
@@ -58,6 +55,17 @@ export async function getAllQuotes() {
       } else {
         resolve(false);
       }
+    });
+  });
+}
+
+
+export async function deleteQuote(id) {
+  return new Promise((resolve, reject) => {
+    mysql.query('DELETE FROM Quotes WHERE id = ?;', [id], (err, result) => {
+      if (err) {
+        reject(err);
+      } resolve(true);
     });
   });
 }

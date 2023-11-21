@@ -159,3 +159,41 @@ function mergeArrays(arr1, arr2, offset, limit) {
     mergedArray.sort((a, b) => a.name.localeCompare(b.name, undefined, {sensitivity: 'base'}));
     return mergedArray.slice(offset, limit + offset);
 }
+
+
+export async function addCustomer(custObj) {
+    return new Promise((resolve, reject) => {
+        const values = getNewCustomerValues(custObj);
+        const query = `
+            INSERT INTO New_Customers 
+            (Name, Address, City, Country, Postal_Code, Currency, Contact_Phone, Contact_Email) 
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?);
+        `;
+        mysql.query(query, values, (err, res) => {
+            const query2 = `
+                UPDATE New_Customers AS a
+                INNER JOIN (
+                SELECT id FROM New_Customers ORDER BY id DESC LIMIT 1
+                ) AS b ON a.id = b.id
+                SET a.Customer_Number = CONCAT('NEW##', a.id);
+            `;
+            mysql.query(query2, values, (err, res2) => {
+                resolve(true);
+            });
+        });
+    });
+}
+
+function getNewCustomerValues(custObj) {
+    return [
+        custObj["name"],
+        custObj["address"],
+        custObj["city"],
+        custObj["country"],
+        custObj["postal code"],
+        custObj["currency"],
+        custObj["contact name"],
+        custObj["contact phone"],
+        custObj["contact email"]
+    ]
+}
