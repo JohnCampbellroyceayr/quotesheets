@@ -3,11 +3,28 @@ const mysql = await connectMysql();
 
 export async function getQuote(id) {
   return new Promise((resolve, reject) => {
-    mysql.query('SELECT * FROM Quotes WHERE id = ?;', id, (err, result) => {
+    mysql.query('SELECT * FROM Quotes WHERE id = ?;', id, (err, header) => {
       if (err) {
         reject(err);
-      } else if (result.length > 0) {
-        resolve(result[0]);
+      } else if (header.length > 0) {
+        const itemQuery = `
+        SELECT Items.*, 
+          Parts.name AS name
+        FROM Items 
+        JOIN Parts ON Items.type = Parts.type
+        WHERE Items.quote = ?
+        ORDER BY Items.id ASC;
+        `;
+        mysql.query(itemQuery, id, (err, items) => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve({
+              header: header,
+              items: items,
+            });
+          }
+        });
       } else {
         resolve(false);
       }

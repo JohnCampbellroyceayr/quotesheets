@@ -2,6 +2,8 @@ import express from "express";
 
 import { getAllQuotes, getQuote, getQuoteName, getQuoteIndex, deleteQuote } from "./src/requests/quote.js";
 import { getCustomerName, getCustomerIndex, addCustomer } from "./src/requests/customer.js";
+import { addPart, getAllParts } from "./src/requests/parts.js";
+import { updateItem } from "./src/requests/items.js";
 
 const app = express();
 import cors from 'cors';
@@ -78,6 +80,22 @@ app.post('/api/quotes/delete', async (req, res) => {
     const id = req.body.id;
     const quoteConfirm = await deleteQuote(id);
     res.json({success: quoteConfirm});
+});
+
+app.post('/api/item/edit', (req, res) => {
+    console.log(req.body);
+    updateItem(req.body);
+    res.json([]);
+});
+
+app.get('/api/parts', async (req, res) => {
+    const parts = await getAllParts();
+    res.json(parts);
+});
+
+app.post('/api/part/add', async (req, res) => {
+    const parts = await addPart(req.body.name, req.body.description);
+    res.json({ success: parts });
 });
 
 app.listen(2000, () => {
