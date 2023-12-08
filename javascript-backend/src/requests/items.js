@@ -1,5 +1,4 @@
-import connectMysql from '../databases/mysqlconnection.js';
-const mysql = await connectMysql();
+import mysqlQuery from '../databases/mysqlconnection.js';
 
 export async function updateItem(obj) {
     const id = obj["ID"];
@@ -13,34 +12,27 @@ export async function updateItem(obj) {
         addItem(type, price, quantity, quoteId, description, custom);
     }
     else {
-        mysql.query('SELECT * FROM Items WHERE id = ?;', id, (err, result) => {
-            if(err) {
-                console.log(err);
+        const item = await mysqlQuery('SELECT * FROM Items WHERE id = ?;', id);
+        if(item.error) {
+            return [];
+        }
+        else {
+            if(result.length > 0) {
+                await editItem(id, type, price, quantity, quoteId, description, custom);
             }
             else {
-                if(result.length > 0) {
-                    editItem(id, type, price, quantity, quoteId, description, custom);
-                }
-                else {
-                    addItem(type, price, quantity, quoteId, description, custom);
-                }
+                await addItem(type, price, quantity, quoteId, description, custom);
             }
-        });
+        }    
     }
 }
 
-function addItem(type, price, quantity, quoteId, description, custom) {
-    mysql.query('INSERT INTO Items (type, price, quantity, quote, description, custom) VALUES (?, ?, ?, ?, ?, ?);', [type, price, quantity, quoteId, description, custom], (err, result) => {
-        if(err) {
-            console.log(err);
-        }
-    });
+async function addItem(type, price, quantity, quoteId, description, custom) {
+    const itemResult = await mysqlQuery('INSERT INTO Items (type, price, quantity, quote, description, custom) VALUES (?, ?, ?, ?, ?, ?);', [type, price, quantity, quoteId, description, custom]);
+    return itemResult;
 }
 
-function editItem(id, type, price, quantity, quoteId, description, custom) {
-    mysql.query('UPDATE Items SET type = ?, price = ?, quantity = ?, quote = ?, description = ?, custom = ? WHERE id = ?;', [type, price, quantity, quoteId, description, custom, id], (err, result) => {
-        if(err) {
-            console.log(err);
-        }
-    });
+async function editItem(id, type, price, quantity, quoteId, description, custom) {
+    const itemResult = await mysqlQuery('UPDATE Items SET type = ?, price = ?, quantity = ?, quote = ?, description = ?, custom = ? WHERE id = ?;', [type, price, quantity, quoteId, description, custom, id]);
+    return itemResult;
 }

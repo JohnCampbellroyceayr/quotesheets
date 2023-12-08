@@ -1,7 +1,7 @@
 import connectODBC from '../databases/odbcconnection.js';
-import connectMysql from '../databases/mysqlconnection.js';
+import mysqlQuery from '../databases/mysqlconnection.js';
+
 const ODBC = await connectODBC();
-const mysql = await connectMysql();
 
 export async function getCustomerName(name, limit, offset) {
     return new Promise((resolve, reject) => {
@@ -24,7 +24,7 @@ export async function getCustomerName(name, limit, offset) {
             WHERE LOWER(BVNAME) LIKE ? 
             ORDER BY LOWER(TRIM(BVNAME))
         `;
-        ODBC.query(query, [searchName], (error, result) => {
+        ODBC.query(query, [searchName], async (error, result) => {
             if (error) {
                 console.error(error);
                 reject(error);
@@ -46,26 +46,26 @@ export async function getCustomerName(name, limit, offset) {
                 TRIM(Country),
                 TRIM(Postal_Code)
             `;
-            const mysqlQuery = 'SELECT ' + selectFields + ' FROM New_Customers WHERE Name LIKE ?;';
+            const query = 'SELECT ' + selectFields + ' FROM New_Customers WHERE Name LIKE ?;';
             const vals = [searchName];
-            mysql.query(mysqlQuery, vals, (err, res) => {
-                if (err) {
-                    console.log(err);
-                    reject(err);
-                } else if (res.length > 0) {
+
+            const customerList = await mysqlQuery(query, vals);
+            if(!customerList.error) {
+                if (customerList.result.length > 0) {
                     const newcustArr = [];
-                    for (let i = 0; i < res.length; i++) {
+                    for (let i = 0; i < customerList.result.length; i++) {
+                        const res = customerList.result[i];
                         newcustArr.push({
-                            name: res[i]["NAME"],
-                            number: res[i]["NUMBER"],
-                            address: makeAddress(res[i])
+                            name: res["NAME"],
+                            number: res["NUMBER"],
+                            address: makeAddress(res)
                         });
                     }
                     resolve(mergeArrays(custArr, newcustArr, offset, limit));
-                } else {
-                    resolve(custArr.slice(offset, limit + offset));
+                    return ;
                 }
-            });
+            }
+            resolve(custArr.slice(offset, limit + offset));
         });
     });
 }
@@ -91,7 +91,7 @@ export async function getCustomerIndex(index, limit) {
             FETCH NEXT ? ROWS ONLY
         `;
         const searchIndex = (index > 0) ? index - 1 : 0;
-        ODBC.query(query, [searchIndex, limit], (error, result) => {
+        ODBC.query(query, [searchIndex, limit], async (error, result) => {
             if (error) {
                 console.error(error);
                 reject(error);
@@ -117,26 +117,31 @@ export async function getCustomerIndex(index, limit) {
                     TRIM(Country),
                     TRIM(Postal_Code)
                 `;
-                const mysqlQuery = (custArr.length < limit) ? 'SELECT ' + selectFields + ' FROM New_Customers WHERE LOWER(Name) <= ?;' : 'SELECT ' + selectFields + ' FROM New_Customers WHERE Name BETWEEN ? AND ?;';
+                const query = (custArr.length < limit) ? 'SELECT ' + selectFields + ' FROM New_Customers WHERE LOWER(Name) <= ?;' : 'SELECT ' + selectFields + ' FROM New_Customers WHERE Name BETWEEN ? AND ?;';
                 const vals = (custArr.length < limit) ? [custArr[0].name] : [custArr[0].name, custArr[custArr.length - 1].name];
-                mysql.query(mysqlQuery, vals, (err, res) => {
-                    if (err) {
-                        console.log(err);
-                        reject(err);
-                    } else if (res.length > 0) {
+
+                const customerList = await mysqlQuery(query, vals);
+
+                if(!customerList.error) {
+                    if(customerList.result.length > 0) {
                         const newcustArr = [];
-                        for (let i = 0; i < res.length; i++) {
+                        for (let i = 0; i < customerList.result.length; i++) {
+                            const res = customerList.result[i];
                             newcustArr.push({
-                                name: res[i]["NAME"],
-                                number: res[i]["NUMBER"],
-                                address: makeAddress(res[i])
+                                name: res["NAME"],
+                                number: res["NUMBER"],
+                                address: makeAddress(res)
                             });
                         }
                         resolve(mergeArrays(custArr, newcustArr, (index == 0) ? 0 : 1, limit));
-                    } else {
-                        resolve(custArr);
                     }
-                });
+                    else {
+                        resolve(custArr);    
+                    }
+                }
+                else {
+                    resolve(custArr);
+                }
             }
         });
     });

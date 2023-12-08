@@ -1,38 +1,36 @@
-import connectMysql from '../databases/mysqlconnection.js';
-const mysql = await connectMysql();
+import mysqlQuery from '../databases/mysqlconnection.js';
 
-export async function getAllParts(id) {
-  return new Promise((resolve, reject) => {
-    mysql.query('SELECT * FROM Parts;', id, (err, parts) => {
-      if (err) {
-        reject(err);
-      } 
-      else {
-        resolve(parts);
-      }
-    });
-  });
+export async function getAllParts() {
+  const queryResult = await mysqlQuery('SELECT * FROM Parts;');
+  return queryResult;
 }
 
 export async function addPart(name, description) {
-  return new Promise((resolve, reject) => {
-    mysql.query('INSERT INTO Parts (name, description) VALUES (?, ?);', [name, description], (err, parts) => {
-      if (err) {
-        reject(err);
-      }
-      else {
-          const setTypeQuery = `
-              UPDATE Parts AS a
-              INNER JOIN (
-              SELECT id FROM Parts ORDER BY id DESC LIMIT 1
-              ) AS b ON a.id = b.id
-              SET a.type = CONCAT('Q', a.id);
-          `;
-          mysql.query(setTypeQuery, (err, res2) => {
-              resolve(true);
-          });
-          resolve(false);
-      }
-    });
-  });
+
+  const addResult = await mysqlQuery('INSERT INTO Parts (name, description) VALUES (?, ?);', [name, description]);
+
+  if(addResult.error === true) {
+    return { message: "Failed to create part" };
+  }
+
+  const newPartId = addResult.result.insertId;
+  const typeLetter = 'Q';
+
+  const setTypeIdResult = await mysqlQuery("UPDATE Parts SET type = CONCAT(?, ?) WHERE id = ?;", [typeLetter, newPartId, newPartId]);
+
+  if(setTypeIdResult.error === true) {
+    return { message: "Failed to create part" };
+  }
+
+  return {
+    message: createSuccessMessage(typeLetter, newPartId, name, description)
+  };
+}
+
+function createSuccessMessage(letter, partId, name, description) {
+  let successMessage = "Successfully created part: \n";
+  successMessage += `Id: ${letter + partId} \n`;
+  successMessage += `Name: ${name} \n`;
+  successMessage += `Description: ${description} \n`;
+  return successMessage;
 }

@@ -95,7 +95,7 @@ app.get('/api/parts', async (req, res) => {
 
 app.post('/api/part/add', async (req, res) => {
     const parts = await addPart(req.body.name, req.body.description);
-    res.json({ success: parts });
+    res.json(parts);
 });
 
 app.listen(2000, () => {
