@@ -167,26 +167,29 @@ function mergeArrays(arr1, arr2, offset, limit) {
 
 
 export async function addCustomer(custObj) {
-    return new Promise((resolve, reject) => {
-        const values = getNewCustomerValues(custObj);
-        const query = `
-            INSERT INTO New_Customers 
-            (Name, Address, City, Country, Postal_Code, Currency, Contact_Phone, Contact_Email) 
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?);
-        `;
-        mysql.query(query, values, (err, res) => {
-            const query2 = `
-                UPDATE New_Customers AS a
-                INNER JOIN (
-                SELECT id FROM New_Customers ORDER BY id DESC LIMIT 1
-                ) AS b ON a.id = b.id
-                SET a.Customer_Number = CONCAT('NEW##', a.id);
-            `;
-            mysql.query(query2, values, (err, res2) => {
-                resolve(true);
-            });
-        });
-    });
+    const values = getNewCustomerValues(custObj);
+    const query = `
+        INSERT INTO New_Customers 
+        (Name, Address, City, Country, Postal_Code, Currency, Contact_Phone, Contact_Email) 
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?);
+    `;
+
+    const res = await mysqlQuery(query, values);
+
+    const query2 = `
+        UPDATE New_Customers AS a
+        INNER JOIN (
+        SELECT id FROM New_Customers ORDER BY id DESC LIMIT 1
+        ) AS b ON a.id = b.id
+        SET a.Customer_Number = CONCAT('NEW##', a.id);
+    `;
+    const updateId = await mysqlQuery(query2, values);
+    if(res.error || updateId.error) {
+        return false;
+    }
+    else {
+        return true;
+    }
 }
 
 function getNewCustomerValues(custObj) {
